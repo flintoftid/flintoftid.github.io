@@ -1,1 +1,1 @@
-Sitemap: https://flintoftd.github.io/sitemap.xml
+Sitemap: https://flintoftid.github.io/sitemap.xml
