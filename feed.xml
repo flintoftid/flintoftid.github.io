@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://flintoftd.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://flintoftd.github.io/" rel="alternate" type="text/html" /><updated>2020-10-08T21:12:41+01:00</updated><id>https://flintoftd.github.io/</id><title type="html">Ian D. Flintoft</title><subtitle>Research &amp; Engineering Portfolio</subtitle><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><entry><title type="html">Electromagnetic Diffusion Model Updates</title><link href="https://flintoftd.github.io/edm-update/" rel="alternate" type="text/html" title="Electromagnetic Diffusion Model Updates" /><published>2018-03-24T00:00:00+00:00</published><updated>2018-03-24T00:00:00+00:00</updated><id>https://flintoftd.github.io/edm-update</id><content type="html" xml:base="https://flintoftd.github.io/edm-update/">&lt;p&gt;Added &lt;a href=&quot;https://bitbucket.org/uoyaeg/edmctc/wiki/EDM_Implementation_Notes.pdf&quot;&gt;Electromagnetic Diffusion Model Implementation Notes&lt;/a&gt; to the &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; and a summary of the associated Open Source 
+&lt;a href=&quot;https://bitbucket.org/uoyaeg/edmctc&quot;&gt;Electromagnetic Diffusion Model Canonical Test Cases&lt;/a&gt; software package to the &lt;a href=&quot;/software/software.html&quot;&gt;software section&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3dedmmesh2.jpg&quot; alt=&quot;placeholder&quot; title=&quot;3D mesh of a cavity containing a cylinder&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Added Electromagnetic Diffusion Model Implementation Notes to the resources section and a summary of the associated Open Source Electromagnetic Diffusion Model Canonical Test Cases software package to the software section.</summary></entry><entry><title type="html">New resources section</title><link href="https://flintoftd.github.io/resources-section/" rel="alternate" type="text/html" title="New resources section" /><published>2016-11-27T00:00:00+00:00</published><updated>2016-11-27T00:00:00+00:00</updated><id>https://flintoftd.github.io/resources-section</id><content type="html" xml:base="https://flintoftd.github.io/resources-section/">&lt;p&gt;New &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; for notes, examples and other material.&lt;/p&gt;
+
+&lt;p&gt;I have added a &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; section to the website, accessible from the 
+navigation bar at the top, where I shall put notes and other material that others may find useful.&lt;/p&gt;
+
+&lt;p&gt;As a start, I have added some 
+&lt;a href=&quot;https://www.dropbox.com/s/smdbgzrm447uc2s/IDF-Notes_On_Small_Aperture_Theory.pdf?dl=0&quot;&gt;notes on small aperture theory&lt;/a&gt; that 
+I made while implementing small aperture models in the 
+&lt;a href=&quot;https://bitbucket.org/uoyaeg/vulture&quot;&gt;Vulture FDTD code&lt;/a&gt; and the 
+&lt;a href=&quot;https://bitbucket.org/uoyaeg/aegpwb&quot;&gt;AEG power balance solver&lt;/a&gt;. These notes are a summary of
+the key steps in the theoretical development of the aperture polarisabilities and equivalent
+dipole moements. There is a wide variation in the conventions used in the literature
+for defining the polarisabilties making it remarkably easy to incur “factor of two/half”
+errors in the transmitted fields. These notes outline all the stages of the development
+starting from Maxwell’s equations using a consistent set of conventions in an endeavour to
+provide a correct implmentation.&lt;/p&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">New resources section for notes, examples and other material.</summary></entry><entry><title type="html">Paper on diffusion of reverberant energy</title><link href="https://flintoftd.github.io/temc-diffusion-paper/" rel="alternate" type="text/html" title="Paper on diffusion of reverberant energy" /><published>2016-10-23T00:00:00+01:00</published><updated>2016-10-23T00:00:00+01:00</updated><id>https://flintoftd.github.io/temc-diffusion-paper</id><content type="html" xml:base="https://flintoftd.github.io/temc-diffusion-paper/">&lt;p&gt;Paper on diffusion of reverberant electromagnetic energy in enclosed spaces 
+accepted for publication in &lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15&quot;&gt;IEEE Transaction on Electromagnetic Compatibility&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Diffusion_equation&quot;&gt;diffusion equation&lt;/a&gt; approach to simulating high-frequency electromagnetic fields
+has a very low computational cost compared to other applicable techniques, offering the 
+potential for a radical increase in the efficiency of the solution high frequency electromagnetic 
+shielding problems with complex topologies. This paper makes an initial evaluation of the 
+method’s utility for &lt;a href=&quot;https://en.wikipedia.org/wiki/Electromagnetic_compatibility&quot;&gt;electromagnetic compatibility&lt;/a&gt; applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/diffusion.jpg&quot; alt=&quot;Diffusion of diffuse energy between two cavities&quot; title=&quot;Diffusion of diffuse energy between two cavities&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The image above shows a cross-sectional view of the the flux of the reverberant energy 
+density at 8 GHz in two cubic cavities coupled by a slot along one edge of the adjoining 
+wall. The cavity on the left has a source of total radiated power 1 watt located near the 
+wall and the cavity on the right contains a highly absorbing cylinder which acts as the “sink”
+for most of the power. The solution was obtained in under one second on a desktop PC.&lt;/p&gt;
+
+&lt;p&gt;The idea of transferring the diffusion equation approach from acoustics to electromagnetics 
+arose from work on using reverberations chambers to study electromagnetic exposure. “Room acoustics” 
+had already been taken over to “room electromagnetics” (&lt;a href=&quot;http://dx.doi.org/10.1109/MAP.2007.376642&quot; title=&quot;J. B. Andersen, J. O. Nielsen, G. F. Pedersen, G. Bauch and M. Herdin, Room electromagnetics, IEEE Antennas Propag. Mag., vol. 49, no. 2, pp. 27-33, April 2007&quot;&gt;Andersen2007&lt;/a&gt;) as a method of studying environmental
+exposure, which led me into the substantial acoustics literature on reverberation. Meanwhile my
+work on high frequency enclosure shielding effectiveness simulations was demonstrating the huge computational resource
+required to obtain results using “full-wave” techniques like &lt;a href=&quot;https://en.wikipedia.org/wiki/Finite-difference_time-domain_method&quot; title=&quot;Finite-difference time-domain method&quot;&gt;FDTD&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Full details of the work can be found in the papers &lt;a href=&quot;#Flintoft2017c&quot;&gt;(Flintoft and Dawson, 2017; Robinson et al., 2017; Flintoft et al., 2017)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Flintoft2017b&quot;&gt;Flintoft, I.D., Marvin, A.C., Funn, F.I., Dawson, L., Zhang, X., Robinson, M.P. and Dawson, J.F., 2017. Evaluation of the diffusion equation for modelling reverberant electromagnetic fields. &lt;i&gt;IEEE Transactions on Electromagnetic Compatibility&lt;/i&gt;, 59(3), pp.760–769.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/TEMC.2016.2623356&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/52005745/TEMC_Flintoft_et_al_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;Determination of the distribution of electromagnetic energy inside electrically large enclosed spaces is important in many electromagnetic compatibility applications, such as certification of aircraft and equipment shielding enclosures. The field inside such enclosed environments contains a dominant diffuse component due to multiple randomizing reflections from the enclosing surfaces. The power balance technique has been widely applied to the analysis of such problems; however, it is unable to account for the inhomogeneities in the field that arise when the absorption in the walls and contents of the enclosure is significant. In this paper we show how a diffusion equation approach can be applied to modeling diffuse electromagnetic fields and evaluate its potential for use in electromagnetic compatibility applications. Two canonical examples were investigated: A loaded cavity and two cavities coupled by a large aperture. The predictions of the diffusion model were compared to measurement data and found to be in good agreement. The diffusion model has a very low computational cost compared to other applicable techniques, such as full-wave simulation and ray-tracing, offering the potential for a radical increase in the efficiency of the solution high frequency electromagnetic shielding problems with complex topologies.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Flintoft2017b,
+  author = {Flintoft, I. D. and Marvin, A. C. and Funn, F. I. and Dawson, L. and Zhang, X. and Robinson, M. P. and Dawson, J. F.},
+  title = {Evaluation of the diffusion equation for modelling reverberant electromagnetic fields},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2017},
+  volume = {59},
+  number = {3},
+  pages = {760-769},
+  month = jun,
+  note = {Date of acceptance: 23/10/2016. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/TEMC.2016.2623356},
+  file = {:pdfs/TEMC59-Flintoft-760.pdf:PDF},
+  keywords = {asymptotic techniques, power balance, absorption cross-section, reverberation chamber, shielding},
+  owner = {idf1},
+  postprint = {https://pure.york.ac.uk/portal/files/52005745/TEMC_Flintoft_et_al_postprint.pdf},
+  timestamp = {2016.10.25}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Robinson2017&quot;&gt;Robinson, M.P., Flintoft, I.D., Dawson, J.F., Marvin, A.C., Funn, F.I., Dawson, L. and Zhang, X., 2017. Effect of loading on field uniformity: Energy diffusion in reverberant environments. In: &lt;i&gt;Proceedings of the XXXIInd General Assembly and Scientific Symposium of the International Union of Radio Science&lt;/i&gt;. Montreal, Canada, pp.E13–2.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.23919/URSIGASS.2017.8105133&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/51708848/EDM_Review_submitted.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;In reverberant electromagnetic environments such as reverberation chambers, shielding enclosures, vehicles and buildings, the electromagnetic energy density is often assumed to be uniform and the direction of arrival of electromagnetic waves (Poynting vector) and their polarisation is assumed uniformly distributed. This is the basis of the power balance method for electromagnetic coupling analysis and much of the theory of reverberation chambers. However significant field inhomogeneity is often encountered in practice when significant losses are present. In this paper we show why this must be so when an energy flow exists from the source of energy to absorptive elements, and how the non-uniformity can be determined using a diffusion based solution. The diffusion based solution, though not as computationally efficient as the power balance method, is still much more efficient than a full-wave approach.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@inproceedings{Robinson2017,
+  timestamp = {2013.08.28},
+  owner = {idf1},
+  booktitle = {Proceedings of the XXXIInd General Assembly and Scientific Symposium of the International Union of Radio Science},
+  month = {19-26 August},
+  address = {Montreal, Canada},
+  author = {Robinson, M P and Flintoft, I D and Dawson, J F and Marvin, A C and Funn, F I and Dawson, L and Zhang, X},
+  title = {Effect of loading on field uniformity: Energy diffusion in reverberant environments},
+  year = {2017},
+  pages = {E13-2},
+  doi = {10.23919/URSIGASS.2017.8105133},
+  file = {:pdfs/URSI2017-Robinson-E13-2.pdf:PDF},
+  postprint = {https://pure.york.ac.uk/portal/files/51708848/EDM_Review_submitted.pdf}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Flintoft2017c&quot;&gt;Flintoft, I.D. and Dawson, J.F., 2017. 3D electromagnetic diffusion models for reverberant environments. In: &lt;i&gt;2017 International Conference on Electromagnetics in Advanced Applications (ICEAA2017)&lt;/i&gt;. Verona, Italy, pp.511–514.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/ICEAA.2017.8065293&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/52659135/ICEAA_3D_EDM_v4_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;Diffusion equation based modeling has been proposed for mapping the reverberant component of the electromagnetic field in enclosures at high frequencies. Preliminary evaluation of the electromagnetic diffusion model using a dimensional reduction approach showed promising results compared to measurements. Here we develop a full three-dimensional diffusion model of the experimental canonical test cases considered in the preliminary evaluation and obtain finite element method solutions. The results are compared to those of the two-dimensional models. We find that the two and three dimensional models are generally in excellent agreement for the pseudo two-dimensional test-cases considered. Some deviations between the two- and three-dimensional models are observed due to the fact the point source must be effectively represented by a line source in the reduced model. The three-dimensional model is still highly efficient compared to other applicable techniques, offering the prospect of a radical reduction in the resources required for simulating reverberant fields in electrically large structures.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@inproceedings{Flintoft2017c,
+  booktitle = {2017 International Conference on Electromagnetics in Advanced Applications (ICEAA2017)},
+  month = {11-15 September},
+  address = {Verona, Italy},
+  author = {Flintoft, I. D. and Dawson, J. F.},
+  title = {3D electromagnetic diffusion models for reverberant environments},
+  year = {2017},
+  pages = {511-514},
+  doi = {10.1109/ICEAA.2017.8065293},
+  file = {:pdfs/ICEAA2017-Flintoft-511.pdf:PDF},
+  keywords = {asymptotic techniques, power balance, absorption cross-section},
+  postprint = {https://pure.york.ac.uk/portal/files/52659135/ICEAA_3D_EDM_v4_postprint.pdf}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Paper on diffusion of reverberant electromagnetic energy in enclosed spaces accepted for publication in IEEE Transaction on Electromagnetic Compatibility.</summary></entry><entry><title type="html">Paper on modelling the shielding characteristics of nonwoven fabrics</title><link href="https://flintoftd.github.io/temc-nonwoven-paper/" rel="alternate" type="text/html" title="Paper on modelling the shielding characteristics of nonwoven fabrics" /><published>2016-08-04T00:00:00+01:00</published><updated>2016-08-04T00:00:00+01:00</updated><id>https://flintoftd.github.io/temc-nonwoven-paper</id><content type="html" xml:base="https://flintoftd.github.io/temc-nonwoven-paper/">&lt;p&gt;Paper on modelling the low frequency shielding effectiveness of nonwoven fabrics
+accepted for publication in &lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15&quot;&gt;IEEE Transaction on Electromagnetic Compatibility&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nonwoven fabric materials with conductive fibres are often used as a lightweight 
+functional layer in composite laminates to enhance the overall electromagnetic shielding
+performance of a structure. The structure of these types of material are random and can 
+only be described statistically. In this paper we applied Monte Carlo simulation 
+techniques to an equivalent circuit model of the material structure to derive 
+semi-empirical models for the shielding performance of the material. These models can
+be applied in industry to the design of materials for particular applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/veil-mesh_640.jpg&quot; alt=&quot;image placeholder&quot; title=&quot;3D mesh representation of a veil generated by the Monte Carlo simulation tool&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The image above shows a 3D image of a nonwoven structure derived from a particular structure
+generated by the Monte Carlo simulator. The small spheres denote contact points between
+the fibres which may have a non-zero resistance and therefore contribute to the overall
+surface resistance of the material and hence its shielding effectiveness.&lt;/p&gt;
+
+&lt;p&gt;The work in the paper is part of a collaboration between the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt; and &lt;a href=&quot;http://www.tfpglobal.com&quot; title=&quot;Technical Fibre Products&quot;&gt;Technical Fibre Products&lt;/a&gt;.
+My particular contribution to the collaboration was initiating the &lt;a href=&quot;https://en.wikipedia.org/wiki/Percolation_theory&quot;&gt;percolation theory&lt;/a&gt; approach
+to the modelling and developing and implementing the Monte Simulation tool in &lt;a href=&quot;https://www.mathworks.com/products/matlab&quot;&gt;MATLAB&lt;/a&gt; using 
+elements of the &lt;a href=&quot;https://bitbucket.org/uoyaeg/aegmesher&quot; title=&quot;AEG structured mesh generator&quot;&gt;AEG Mesher&lt;/a&gt; software package.&lt;/p&gt;
+
+&lt;p&gt;Full details of the work can be found in the paper &lt;a href=&quot;#Dawson2017a&quot;&gt;(Dawson et al., 2017; Austin et al., 2015; Austin et al., 2013)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Dawson2017a&quot;&gt;Dawson, J.F., Austin, A.N., Flintoft, I.D. and Marvin, A.C., 2017. Shielding effectiveness and sheet conductance of nonwoven carbon-fiber sheets. &lt;i&gt;IEEE Transactions on Electromagnetic Compatibility&lt;/i&gt;, 59(1), pp.84–92.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/TEMC.2016.2601658&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/50264656/TEMC59_Dawson_84_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;Nonwoven carbon-fiber sheets are often used to form a conductive layer in composite materials for electromagnetic shielding and other purposes. While a large amount of research has considered the properties of similar idealized materials near the percolation threshold, little has been done to provide validated analytic models suitable for materials of practical use for electromagnetic shielding. Since numerical models consume considerable computer resource and do not provide the insight which enables improved material design, an analytic model is of great utility for materials development. This paper introduces a new theoretical model for the sheet conductance of nonwoven carbon-fiber sheets built on the theory of percolation for 2-D conducting stick networks. The model accounts for the effects of sample thickness, fiber angle distribution, and contact conductance on the sheet conductance. The theory shows good agreement with Monte Carlo simulations and measurements of real materials in the supercritical percolation regime where the dimensionless areal concentration of fibers exceeds about 50. The theoretical model allows the rapid prediction of material shielding performance from a limited number of manufacturing parameters.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Dawson2017a,
+  author = {Dawson, J. F. and Austin, A. N. and Flintoft, I. D. and Marvin, A. C.},
+  title = {Shielding effectiveness and sheet conductance of nonwoven carbon-fiber sheets},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2017},
+  volume = {59},
+  number = {1},
+  pages = {84-92},
+  month = feb,
+  issn = {0018-9375},
+  note = {Date of acceptance: 04/08/2016. © 2016 ESA. Personal use of this material is permitted.},
+  doi = {10.1109/TEMC.2016.2601658},
+  file = {:pdfs/TEMC59-Dawson-84.pdf:PDF},
+  keywords = {electromagnetic shielding effectiveness, percolation theory, sheet conductance, carbon fibre composite, nonwoven fabric},
+  postprint = {https://pure.york.ac.uk/portal/files/50264656/TEMC59_Dawson_84_postprint.pdf},
+  publisher = {IEEE}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Austin2015&quot;&gt;Austin, A.N., Dawson, J.F., Flintoft, I.D. and Marvin, A.C., 2015. Modelling the micro-structure of non-uniform conductive non-woven fabrics: Determination of sheet resistance. In: &lt;i&gt;2015 Joint IEEE International Symposium on Electromagnetic Compatibility and EMC Europe&lt;/i&gt;. Dresden, Germany: IEEE, pp.1–6.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/ISEMC.2015.7256122&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/40237334/001_5072_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;The plane-wave shielding effectiveness of conductive non-woven fabrics is dominated by the sheet conductance over a wide range of frequencies until the effects of skin depth, and apertures start to influence the performance (typically at 1-10 GHz depending on the areal density). This paper describes models for determining the sheet conductance from knowledge of the type, quantity, orientation and contact resistance of the fibres in the fabricated material. The stochastic nature of these materials, their complexity and local scale variability has been included in the models and correlates well with experimental results. The anisotropic sheet conductance is modelled to within 1% of the measured value in the high shielding orientation and to within 2% in the orthogonal orientation using an inter-fibre contact resistance estimated to be 10 kΩ.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@inproceedings{Austin2015,
+  issn = {2158-110X},
+  booktitle = {2015 Joint IEEE International Symposium on Electromagnetic Compatibility and EMC Europe},
+  month = {16-22 August},
+  publisher = {IEEE},
+  address = {Dresden, Germany},
+  author = {Austin, A. N. and Dawson, J. F. and Flintoft, I. D. and Marvin, A. C.},
+  title = {Modelling the micro-structure of non-uniform conductive non-woven fabrics: Determination of sheet resistance},
+  year = {2015},
+  pages = {1--6},
+  note = {© 2015 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/ISEMC.2015.7256122},
+  file = {:pdfs/EMCE2015-Austin-1.pdf:PDF},
+  keywords = {sheet resistance, shielding effectiveness, stochastic material, contact resistance, anisotropic material, circuit model},
+  owner = {idf1},
+  postprint = {https://pure.york.ac.uk/portal/files/40237334/001_5072_postprint.pdf},
+  timestamp = {2016.10.12}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Austin2013&quot;&gt;Austin, A.N., Dawson, J.F., Flintoft, I.D. and Marvin, A.C., 2013. Analysis of the shielding properties of metalised nonwoven materials. In: &lt;i&gt;2013 International Symposium on Electromagnetic Compatibility (EMC EUROPE 2013)&lt;/i&gt;, 12th International Symposium on Electromagnetic Compatibility. Brugge, Belgium: IEEE, pp.526–531.&lt;/span&gt;&lt;br /&gt;
+
+
+
+
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;This paper considers the shielding effectiveness of nonwoven materials in the 1-8.5 GHz range using parametric semi-empirical models and experimental techniques. A range of materials based on metalised carbon fibres are considered with weights between 10 and 75 g/m2, thicknesses between 50 and 400μm, and measured shielding effectiveness between 35 and 100dB. A numerical model is presented and compared to experimental results.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@inproceedings{Austin2013,
+  issn = {2325-0356},
+  isbn = {978-1-4673-4979-6},
+  booktitle = {2013 International Symposium on Electromagnetic Compatibility (EMC EUROPE 2013)},
+  month = {2-6 September},
+  publisher = {IEEE},
+  address = {Brugge, Belgium},
+  series = {12th International Symposium on Electromagnetic Compatibility},
+  author = {Austin, A. N. and Dawson, J. F. and Flintoft, I. D. and Marvin, A. C.},
+  title = {Analysis of the shielding properties of metalised nonwoven materials},
+  year = {2013},
+  pages = {526--531},
+  file = {:pdfs/EMCE2013-Austin-526.pdf:PDF},
+  keywords = {shielding; metallised nonwovens; high reflectivity; TLM modelling; aperture; pore; absorber box; carbon; fibre; electroplating; electrochemical; electric field; screening},
+  owner = {idf1},
+  timestamp = {2013.09.17}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Paper on modelling the low frequency shielding effectiveness of nonwoven fabrics accepted for publication in IEEE Transaction on Electromagnetic Compatibility.</summary></entry><entry><title type="html">Paper on a validation test-suite for CEM solvers</title><link href="https://flintoftd.github.io/temc-testsuite-paper/" rel="alternate" type="text/html" title="Paper on a validation test-suite for CEM solvers" /><published>2016-07-31T00:00:00+01:00</published><updated>2016-07-31T00:00:00+01:00</updated><id>https://flintoftd.github.io/temc-testsuite-paper</id><content type="html" xml:base="https://flintoftd.github.io/temc-testsuite-paper/">&lt;p&gt;Paper on a validation and verification test-suite for computational electromagnetics solvers
+accepted for publication in &lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15&quot;&gt;IEEE Transaction on Electromagnetic Compatibility&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This collaborative paper with &lt;a href=&quot;https://www.ugr.es/en&quot; title=&quot;University of Granada&quot;&gt;The University of Granada&lt;/a&gt; presents a suite of validation test cases for 
+computational electromagnetics (&lt;a href=&quot;http://en.wikipedia.org/wiki/Computational_electromagnetics&quot;&gt;CEM&lt;/a&gt;) simulation tools. The test-cases presented were designed to 
+be representative of typical electromagnetic compatibility (&lt;a href=&quot;https://en.wikipedia.org/wiki/Electromagnetic_compatibility&quot;&gt;EMC&lt;/a&gt;) applications and are therefore 
+of particular utility for validating tools for use in this application area. The components of the 
+test-suite have been developed by members of the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt; over a number of years, particularly as 
+part of the &lt;a href=&quot;http://www.flaviir.com&quot;&gt;FLAVIIR&lt;/a&gt; project funded jointly by &lt;a href=&quot;http://www.baesystems.com&quot;&gt;BAES&lt;/a&gt; and &lt;a href=&quot;http://www.epsrc.ac.uk&quot;&gt;EPSRC&lt;/a&gt; and the &lt;a href=&quot;https://erc.europa.eu&quot;&gt;ERC&lt;/a&gt; funded High 
+Intensity Radiated Field Synthetic Environment (&lt;a href=&quot;http://ec.europa.eu/research/transport/projects/items/hirf_se_en.htm&quot;&gt;HIRF SE&lt;/a&gt;) research programme.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/boxts-cad_320.jpg&quot; alt=&quot;placeholder 1&quot; title=&quot;CAD model of a test-case&quot; /&gt;
+&lt;img src=&quot;/assets/images/boxts-hardware_320.jpg&quot; alt=&quot;placeholder 2&quot; title=&quot;Hardware implementation of a test-case in an anechoic chamber&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Full details of the work can be found in the paper &lt;a href=&quot;#Flintoft2017&quot;&gt;(Flintoft et al., 2017)&lt;/a&gt; and
+on the &lt;a href=&quot;https://bitbucket.org/uoyaeg/aegboxts&quot;&gt;test-suite web site&lt;/a&gt;. Some of the 
+earlier developments are reported in &lt;a href=&quot;#Flintoft2013b&quot;&gt;(Flintoft et al., 2013; Tallini et al., 2011; Christopoulos et al., 2010; Dawson et al., 2008)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Flintoft2017&quot;&gt;Flintoft, I.D., Dawson, J.F., Dawson, L., Marvin, A.C., Alvarez, J. and Garcia, S.G., 2017. A modular testsuite for the validation and verification of electromagnetic solvers in electromagnetic compatibility applications. &lt;i&gt;IEEE Transactions on Electromagnetic Compatibility&lt;/i&gt;, 59(1), pp.111–118.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/TEMC.2016.2599004&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/50264571/TEMC59_Flintoft_111_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;Computational solvers are increasingly used to solve complex electromagnetic compatibility (EMC) problems in research, product design, and manufacturing. The reliability of these simulation tools must be demonstrated in order to give confidence in their results. Standards prescribe a range of techniques for the validation, verification, and calibration of computational electromagnetics solvers including external references based on measurement or for cross-validation with other models. We have developed a modular test-suite based on an enclosure to provide the EMC community with a complex external reference for model validation. We show how the test-suite can be used to validate a range of electromagnetic solvers. The emphasis of the test-suite is on the features of interest for EMC applications, such as apertures and coupling to cables. We have fabricated a hardware implementation of many of the test-cases and measured them in an anechoic chamber over the frequency range to 1–6 GHz to provide a measurement reference for validation over this range. The test-suite has already been used extensively in two major aeronautical research programs and is openly available for use and future development by the community.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Flintoft2017,
+  author = {Flintoft, I. D. and Dawson, J. F. and Dawson, L. and Marvin, A. C. and Alvarez, J. and Garcia, S. G.},
+  title = {A modular testsuite for the validation and verification of electromagnetic solvers in electromagnetic compatibility applications},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2017},
+  volume = {59},
+  number = {1},
+  pages = {111-118},
+  month = feb,
+  issn = {0018-9375},
+  note = {Date of acceptance: 31/07/2016. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/TEMC.2016.2599004},
+  file = {:pdfs/TEMC59-Flintoft-111.pdf:PDF},
+  keywords = {computational electromagnetics, validation, verification, benchmark problems},
+  postprint = {https://pure.york.ac.uk/portal/files/50264571/TEMC59_Flintoft_111_postprint.pdf},
+  publisher = {IEEE}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Flintoft2013b&quot;&gt;Flintoft, I.D., Dawson, J.F., Dawson, L. and Marvin, A.C., 2013. A modular test-case for validation of electromagnetic solvers in electromagnetic compatibility applications. In: &lt;i&gt;Computational Electromagnetics for EMC 2013 (CEMEMC’13)&lt;/i&gt;. Granada, Spain.&lt;/span&gt;&lt;br /&gt;
+
+
+
+
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@conference{Flintoft2013b,
+  author = {Flintoft, I. D. and Dawson, J. F. and Dawson, L. and Marvin, A. C.},
+  title = {A modular test-case for validation of electromagnetic solvers in electromagnetic compatibility applications},
+  booktitle = {Computational Electromagnetics for EMC 2013 (CEMEMC’13)},
+  year = {2013},
+  address = {Granada, Spain},
+  month = {19-21 March},
+  file = {:pdfs/CEMEMC2013-Flintoft-1.pdf:PDF},
+  owner = {idf1},
+  timestamp = {2016.10.12}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Tallini2011&quot;&gt;Tallini, D., Dawson, J.F., Flintoft, I.D., Kunze, M. and Munteanu, I., 2011. Virtual HIRF tests in CST STUDIO SUITE;. A reverberant environment application. In: &lt;i&gt;Proceedings of the 2011 International Conference on Electromagnetics
+	in Advanced Applications, ICEAA2011&lt;/i&gt;. Torino, Italy, pp.849–852.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/ICEAA.2011.6046454&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;This paper provides an example of a reverberant environment application. A metallic box in different configurations has been simulated with CST STUDIO SUITE™ and the calculated results have been compared to measurements.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@inproceedings{Tallini2011,
+  isbn = {978-1-61284-976-8},
+  booktitle = {Proceedings of the 2011 International Conference on Electromagnetics
+  	in Advanced Applications, ICEAA2011},
+  month = {12-16 September},
+  address = {Torino, Italy},
+  author = {Tallini, D. and Dawson, J. F. and Flintoft, I. D. and Kunze, M. and Munteanu, I.},
+  title = {Virtual HIRF tests in CST STUDIO SUITE;. A reverberant environment application},
+  year = {2011},
+  pages = {849--852},
+  doi = {10.1109/ICEAA.2011.6046454},
+  file = {:pdfs/ICEAA2011-Tallini-849.pdf:PDF},
+  keywords = {computational electromagnetics;reverberation;CST STUDIO SUITE;metallic box;reverberant environment application;virtual HIRF test;Aperture antennas;Frequency domain analysis;Probes;Receiving antennas;Time domain analysis},
+  owner = {idf1},
+  timestamp = {2013.09.17}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Christopoulos2010&quot;&gt;Christopoulos, C., Dawson, J.F., Dawson, L., Flintoft, I.D., Hassan, O., Marvin, A.C., K. Morgan, and, Sewell, P., Smartt, C.J. and Xie, Z.Q., 2010. Characterization and modelling of electromagnetic interactions in aircraft. &lt;i&gt;Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering&lt;/i&gt;, [online] 224(4), pp.449–458.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1243/09544100JAERO567&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://pig.sagepub.com/content/224/4/449.abstract&quot;&gt;&lt;i class=&quot;fa fa-fw fa-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;This article describes the development of modelling techniques and simulation tools for the electromagnetic (EM) analysis of aircraft. It is shown that hybrid solvers and multi-scale techniques can be used effectively to analyse the EM response of aircraft. The importance of supplementing models with appropriate measurement and characterization techniques for parameter extraction and for validation is also demonstrated.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Christopoulos2010,
+  author = {Christopoulos, C. and Dawson, J. F. and Dawson, L. and Flintoft, I. D. and Hassan, O. and Marvin, A. C. and and K. Morgan and Sewell, P. and Smartt, C. J. and Xie, Z. Q.},
+  title = {Characterization and modelling of electromagnetic interactions in aircraft},
+  journal = {Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering},
+  year = {2010},
+  volume = {224},
+  number = {4},
+  pages = {449--458},
+  month = apr,
+  note = {Special issue on the Flapless Airvehicle Integrated Industrial Research (FLAVIIR) Programme in Aeronautical Engineering},
+  doi = {10.1243/09544100JAERO567},
+  eprint = {http://pig.sagepub.com/content/224/4/449.full.pdf+html},
+  file = {:pdfs/PIMEGJAE224-Christopoulos-449.pdf:PDF},
+  owner = {idf1},
+  timestamp = {2013.09.02},
+  url = {http://pig.sagepub.com/content/224/4/449.abstract}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;Dawson2008&quot;&gt;Dawson, J.F., Smartt, C.J., Flintoft, I.D. and Christopoulos, C., 2008. Validating a numerical electromagnetic solver in a reverberant environment. In: &lt;i&gt;4th IEE International Conference on Computation in Electromagnetics (CEM2002)&lt;/i&gt;. Bournemouth, UK: IEE, pp.42–43.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1049/cp:20080214&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/4881944/Dawson2008a_IET_CEM.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;This paper presents some thoughts on how to compare the results from a numerical electromagnetic solver with measured data in a reverberant environment where a large number of resonant modes are present in the data.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@inproceedings{Dawson2008,
+  booktitle = {4th IEE International Conference on Computation in Electromagnetics (CEM2002)},
+  month = {9-11 April},
+  publisher = {IEE},
+  address = {Bournemouth, UK},
+  number = {2002/063},
+  author = {Dawson, J. F. and Smartt, C. J. and Flintoft, I. D. and Christopoulos, C.},
+  title = {Validating a numerical electromagnetic solver in a reverberant environment},
+  year = {2008},
+  pages = {42--43},
+  doi = {10.1049/cp:20080214},
+  file = {:pdfs/CEM2008-Dawson-42.pdf:PDF},
+  keywords = {computational electromagnetics;electromagnetic fields;computational electromagnetics;numerical electromagnetic solver;resonant modes;reverberant environment;computational electromagnetics;q-factor;reverberation;validation},
+  owner = {idf1},
+  postprint = {https://pure.york.ac.uk/portal/files/4881944/Dawson2008a_IET_CEM.pdf},
+  timestamp = {2013.09.13}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Paper on a validation and verification test-suite for computational electromagnetics solvers accepted for publication in IEEE Transaction on Electromagnetic Compatibility.</summary></entry><entry><title type="html">IOP Measurement Science and Technology Outstanding Paper Award 2015</title><link href="https://flintoftd.github.io/mst-acs-award/" rel="alternate" type="text/html" title="IOP Measurement Science and Technology Outstanding Paper Award 2015" /><published>2016-06-28T00:00:00+01:00</published><updated>2016-06-28T00:00:00+01:00</updated><id>https://flintoftd.github.io/mst-acs-award</id><content type="html" xml:base="https://flintoftd.github.io/mst-acs-award/">&lt;p&gt;Received the &lt;a href=&quot;http://iopscience.iop.org/journal/0957-0233&quot;&gt;IOP Measurement Science and Technology&lt;/a&gt; Outstanding Paper Award 2015
+in Biological, Healthcare and Life Sciences for the paper &lt;a href=&quot;#Flintoft2015a&quot;&gt;(Flintoft et al., 2015)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The award was announced on 17 May 2016 in an
+&lt;a href=&quot;http://iopscience.iop.org/article/10.1088/0957-0233/27/7/070101/meta&quot;&gt;editorial in the journal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mst-paper-award_640.jpg&quot; alt=&quot;placeholder&quot; title=&quot;Presentation of the award by Professor Thomas Krauss&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The award was presented by Professor Thomas Krauss, the University of York’s 
+&lt;a href=&quot;https://www.york.ac.uk/research/themes&quot;&gt;Research Theme Champion&lt;/a&gt;
+for 
+&lt;a href=&quot;https://www.york.ac.uk/research/themes/technologies-for-the-future&quot;&gt;Technologies for the Future&lt;/a&gt;,
+at the Department of Electronics, University of York, on 28th June, 2016. 
+Left to right: &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/martin_robinson&quot;&gt;Dr Martin Robinson&lt;/a&gt;, &lt;a href=&quot;https://www.researchgate.net/profile/Gregory_Melia&quot;&gt;Dr Gregory Melia&lt;/a&gt;, &lt;a href=&quot;https://www.york.ac.uk/physics/people/krauss&quot;&gt;Prof Thomas Krauss&lt;/a&gt;, 
+&lt;a href=&quot;https://idflintoft.bitbucket.io&quot;&gt;Dr Ian Flintoft&lt;/a&gt;, &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/andy_marvin&quot;&gt;Prof Andy Marvin&lt;/a&gt; and &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/john_dawson&quot;&gt;Dr John Dawson&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Flintoft2015a&quot;&gt;Flintoft, I.D., Melia, G.C.R., Robinson, M.P., Dawson, J.F. and Marvin, A.C., 2015. Rapid and accurate broadband absorption cross-section measurement of human bodies in a reverberation chamber. &lt;i&gt;Measurement Science and Technology&lt;/i&gt;, 26(6), p.065701.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1088/0957-0233/26/6/065701&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/43360130/MST26_Flintoft_et_al_065701_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;A measurement methodology for polarisation and angle of incidence averaged electromagnetic absorption cross-section using a reverberation chamber is presented. The method is optimised for simultaneous rapid and accurate determination of average absorption cross-section over the frequency range 1 to 15 GHz, making it suitable for use in human absorption and exposure studies. The typical measurement time of the subject is about eight minutes with a corresponding statistical uncertainty of about 3% in the measured absorption cross-section. The method is validated by comparing measurements on a spherical phantom with Mie Series calculations. The efficacy of the method is demonstrated with measurements of the posture dependence of the absorption cross-section of a human subject and an investigation of the effects of clothing on the measured absorption which are important considerations for the practical design of experiments for studies on human subjects.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Flintoft2015a,
+  author = {Flintoft, I. D. and Melia, G. C. R. and Robinson, M. P. and Dawson, J. F. and Marvin, A. C.},
+  title = {Rapid and accurate broadband absorption cross-section measurement of human bodies in a reverberation chamber},
+  journal = {Measurement Science and Technology},
+  year = {2015},
+  volume = {26},
+  number = {6},
+  pages = {065701},
+  month = jun,
+  issn = {0957-0233},
+  note = {© 2015 IOP Publishing. This is an author created, uncopyedited version of an article accepted for publication in IOP Measurement Science and Technology. The publisher is not responsible for any errors or omissions in this version of the manuscript or any version derived from it. The Version of Record is available online at 10.1088/0957-0233/26/6/065701.},
+  doi = {10.1088/0957-0233/26/6/065701},
+  file = {:pdfs/MST26-Flintoft-065701.pdf:PDF},
+  keywords = {absorption cross-section, reverberation chamber, specific absorption rate},
+  owner = {idf1},
+  postprint = {https://pure.york.ac.uk/portal/files/43360130/MST26_Flintoft_et_al_065701_postprint.pdf},
+  timestamp = {2016.10.12}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Received the IOP Measurement Science and Technology Outstanding Paper Award 2015 in Biological, Healthcare and Life Sciences for the paper (Flintoft et al., 2015).</summary></entry><entry><title type="html">APEMC conference in Shenzhen, China</title><link href="https://flintoftd.github.io/apemc-conference/" rel="alternate" type="text/html" title="APEMC conference in Shenzhen, China" /><published>2016-05-21T00:00:00+01:00</published><updated>2016-05-21T00:00:00+01:00</updated><id>https://flintoftd.github.io/apemc-conference</id><content type="html" xml:base="https://flintoftd.github.io/apemc-conference/">&lt;p&gt;Attended the 7th Asia-Pacific International Symposium on Electromagnetic Compatibility &amp;amp; Signal Integrity 
+and Technical Exhibition (&lt;a href=&quot;http://apemc.org/Past_APEMC/index.html&quot;&gt;APEMC2016&lt;/a&gt;) at the The Shenzhen Convention and Exhibition Center in Shenzhen this week.&lt;/p&gt;
+
+&lt;p&gt;I presented a paper on the shadowing effects in stacks of PCBs by looking at how the absorption cross-section (ACS)
+measured using a reverberation chamber changes &lt;a href=&quot;#Parker2016b&quot;&gt;(Parker et al., 2016)&lt;/a&gt;. The overall energy absorption is significantly
+reduced by the close spacing of the PCBs in a stack.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/apemc2016-presentation.jpg&quot; alt=&quot;My talk on stacked PCB ACS measurements&quot; title=&quot;My talk on stacked PCB ACS measurements&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The content of the papers is part of the &lt;a href=&quot;/projects/huawei_shielding_2014.html&quot;&gt;Shielding measurement of electrically large enclosures with contents&lt;/a&gt; collaboration project between &lt;a href=&quot;http://www.huawei.com/en&quot;&gt;Huawei Technologies&lt;/a&gt; and the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some papers I found particularly interesting during the conference were Perry Wilson’s paper on the correspondence between acoustic 
+and electromagnetic reverberation chambers (&lt;a href=&quot;http://dx.doi.org/10.1109/APEMC.2016.7522898&quot; title=&quot;P. F. Wilson, Acoustic and electromagnetic reverberation chambers: Similarities and differences, 2016 Asia-Pacific International Symposium on Electromagnetic Compatibility (APEMC), Shenzhen, 2016, pp. 880-882&quot;&gt;Wilson2016&lt;/a&gt;), Zhao Yuan et al’s paper on the statistical analysis of fields in
+electrically large enclosures (&lt;a href=&quot;http://dx.doi.org/10.1109/APEMC.2016.7522859&quot; title=&quot;Zhao Yuan, Zhao Xiang, Yan Liping, Huang KaMa and Zhou Haijing, &amp;quot;Statistical analysis of EM field distribution in electrically large enclosures with rectangle aperture of different sizes, 2016 Asia-Pacific International Symposium on Electromagnetic Compatibility (APEMC), Shenzhen, 2016, pp. 761-764&quot;&gt;Zhao2016&lt;/a&gt;) and Cao Zhangshuai et al’s paper on nonlinear scattering is a 
+reverberation chamber (&lt;a href=&quot;http://dx.doi.org/10.1109/APEMC.2016.7522885&quot; title=&quot;Cao Zhangshuai, Yan Liping, Zhao Yuan and Zhao Xiang, Experimental study on the statistical response of nonlinear element in an electrically large cavity, 2016 Asia-Pacific International Symposium on Electromagnetic Compatibility (APEMC), Shenzhen, 2016, pp. 842-844&quot;&gt;Cao2016&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Parker2016b&quot;&gt;Parker, S.L., Flintoft, I.D., Marvin, A.C., Dawson, J.F., Bale, S.J., Robinson, M.P., Ye, M., Wan, C. and Zhang, M., 2016. Absorption cross section measurement of stacked PCBs in a reverberation chamber. In: &lt;i&gt;2016 Asia-Pacific International Symposium on Electromagnetic Compatibility (APEMC)&lt;/i&gt;. Shenzhen, China, pp.991–993.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/APEMC.2016.7522925&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/49498135/APEMC_Stacked_Measurements_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;The Absorption Cross Section (ACS) of Printed Circuit Boards (PCBs) can be used to help determine how PCBs affect the internal electromagnetic (EM) field in a shielded enclosure and thus the enclosure shielding effectiveness. Stacked PCBs inside densely populated enclosures may not have the same ACS as the sum of the individual PCBs due to ‘shadowing’ effects. In this paper ACS measurement results from stacked PCBs are presented. The results show that stacking the PCBs close together reduces the ACS and this effect is increased with a greater number of PCBs.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@inproceedings{Parker2016b,
+  booktitle = {2016 Asia-Pacific International Symposium on Electromagnetic Compatibility (APEMC)},
+  month = {18-21 May},
+  address = {Shenzhen, China},
+  author = {Parker, S. L. and Flintoft, I. D. and Marvin, A. C. and Dawson, J. F. and Bale, S. J. and Robinson, M. P. and Ye, M. and Wan, C. and Zhang, M.},
+  title = {Absorption cross section measurement of stacked PCBs in a reverberation chamber},
+  year = {2016},
+  pages = {991-993},
+  note = {Date of acceptance: 29/01/2016. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/APEMC.2016.7522925},
+  file = {:pdfs/APEMC2016-Parker-991.pdf:PDF},
+  keywords = {shielding, absorption cross section, reverberation chamber, printed circuit board},
+  postprint = {https://pure.york.ac.uk/portal/files/49498135/APEMC_Stacked_Measurements_postprint.pdf}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Attended the 7th Asia-Pacific International Symposium on Electromagnetic Compatibility &amp;amp; Signal Integrity and Technical Exhibition (APEMC2016) at the The Shenzhen Convention and Exhibition Center in Shenzhen this week.</summary></entry><entry><title type="html">Paper on absorption cross-section and antenna efficiency measurement using dual reverberation chambers</title><link href="https://flintoftd.github.io/temc-ae-paper/" rel="alternate" type="text/html" title="Paper on absorption cross-section and antenna efficiency measurement using dual reverberation chambers" /><published>2016-04-28T00:00:00+01:00</published><updated>2016-04-28T00:00:00+01:00</updated><id>https://flintoftd.github.io/temc-ae-paper</id><content type="html" xml:base="https://flintoftd.github.io/temc-ae-paper/">&lt;p&gt;Paper on using dual reverberation chambers to measure absorption cross-section and antenna efficiency
+accepted for publication in &lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15&quot;&gt;IEEE Transaction on Electromagnetic Compatibility&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The standard technique for measuring absorption cross-section (ACS) in a reverberation chamber determines
+a value that includes the product of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Antenna_efficiency&quot; title=&quot;antenna radiation efficiency&quot;&gt;radiation efficiencies&lt;/a&gt; of the two antennas used in the 
+measurement (&lt;a href=&quot;http://dx.doi.org/10.1109/TEMC.2004.826878&quot; title=&quot;U. Carlberg, P. S. Kildal, A. Wolfgang, O. Sotoudeh and C. Orlenius, Calculated and measured absorption cross sections of lossy objects in reverberation chamber, IEEE Transactions on Electromagnetic Compatibility, vol. 46, no. 2, pp. 146-154, May 2004&quot;&gt;Carlberg2004&lt;/a&gt;). In this paper we present the theory of an alternative measurement methodology 
+using two nested or contiguous reverberation chambers which is free from these errors caused by the radiation 
+efficiencies of the antennas. The new method is based on the theoretical average transmission cross sections (TCSs) of 
+circular holes in a metal plate between the two chambers. Since the existing method of measuring ACS
+includes the effects of the radiation efficiencies of the antennas, a comparison of the ACS of a reference object, 
+measured using both the existing and new methods, also provides an alternative method of determining 
+radiation antenna efficiency.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/temc-ae-nrc-inside_320.jpg&quot; alt=&quot;placeholder 1&quot; title=&quot;Antennas and paddle inside the small reverberation chamber&quot; /&gt;
+&lt;img src=&quot;/assets/images/temc-ae-nrc-outside_320.jpg&quot; alt=&quot;placeholder 2&quot; title=&quot;Aperture between the two reverberation chambers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The work in the paper was the result of a collaboration between the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt; and &lt;a href=&quot;https://www.researchgate.net/profile/Gifuni_Angelo&quot;&gt;Angelo Gifuni&lt;/a&gt; 
+from &lt;a href=&quot;http://www.uniparthenope.it&quot; title=&quot;Dipartimento di Ingegneria, Università di Napoli Parthenope, Napoli, Italy&quot;&gt;Università di Napoli Parthenope&lt;/a&gt;. Full details of the work can be found in the paper &lt;a href=&quot;#Gifuni2016&quot;&gt;(Gifuni et al., 2016)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Gifuni2016&quot;&gt;Gifuni, A., Flintoft, I.D., Bale, S.J., Melia, G.C.R. and Marvin, A.C., 2016. A theory of alternative methods for measurements of absorption cross section and antenna radiation efficiency using nested and contiguous reverberation chambers. &lt;i&gt;IEEE Transactions on Electromagnetic Compatibility&lt;/i&gt;, 58(3), pp.678–685.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/TEMC.2016.2548939&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/48025878/TEMC_456_2015_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;Average ACS can be measured in a reverberation chamber; however, the existing technique determines a value that includes the effects of the radiation efficiencies of the antennas used in the measurement. Correcting for these necessitates further complex measurements. Here, we present the theory of an alternative measurement methodology using two nested or contiguous reverberation chambers which is free from errors caused by the radiation efficiencies of the antennas. The new method is based on the theoretical average transmission cross sections (TCS) of circular holes in a metal plate between the two chambers. In fact, the method can be viewed as an accurate transfer calibration measurement between TCS and ACS that is independent of both the chamber and antenna characteristics. Further, since the existing method of measuring ACS includes the effects of the radiation efficiencies of the antennas, a comparison of the ACS of a reference object, measured using both the existing and new methods, also provides an alternative method of determining radiation antenna efficiency. Measurement uncertainties for both alternative measurement methods-ACS and antenna radiation efficiency-are also derived.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Gifuni2016,
+  author = {Gifuni, A. and Flintoft, I. D. and Bale, S. J. and Melia, G. C. R. and Marvin, A. C.},
+  title = {A theory of alternative methods for measurements of absorption cross section and antenna radiation efficiency using nested and contiguous reverberation chambers},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2016},
+  volume = {58},
+  number = {3},
+  pages = {678-685},
+  month = jun,
+  issn = {0018-9375},
+  note = {Date of acceptance: 28/03/2016. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/TEMC.2016.2548939},
+  file = {:pdfs/TEMC58-Gifuni-678.pdf:PDF},
+  keywords = {reverberation chambers, absorption cross sections, antenna radiation efficiency},
+  postprint = {https://pure.york.ac.uk/portal/files/48025878/TEMC_456_2015_postprint.pdf},
+  publisher = {IEEE}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Paper on using dual reverberation chambers to measure absorption cross-section and antenna efficiency accepted for publication in IEEE Transaction on Electromagnetic Compatibility.</summary></entry><entry><title type="html">Article on a new open source structured mesh generator</title><link href="https://flintoftd.github.io/apm-mesher-paper/" rel="alternate" type="text/html" title="Article on a new open source structured mesh generator" /><published>2016-02-08T00:00:00+00:00</published><updated>2016-02-08T00:00:00+00:00</updated><id>https://flintoftd.github.io/apm-mesher-paper</id><content type="html" xml:base="https://flintoftd.github.io/apm-mesher-paper/">&lt;p&gt;Article on a new open source structured mesh generator for electromagnetic simulation
+tools accepted for publication in &lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=74&quot;&gt;IEEE Antennas and Propagation Magazine&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This article provides an overview of the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt; mesh generator, an &lt;a href=&quot;https://en.wikipedia.org/wiki/Open-source_software&quot;&gt;open source&lt;/a&gt; structured mesh generator 
+for creating uniform and non-uniform cuboid meshes. It was primarily developed for generating meshes 
+for finite-difference time-domain (&lt;a href=&quot;https://en.wikipedia.org/wiki/Finite-difference_time-domain_method&quot;&gt;FDTD&lt;/a&gt;) and similar electromagnetic solvers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mesher-jet-unstructured_320.jpg&quot; alt=&quot;image placeholder&quot; title=&quot;Unstructured input mesh of a jet aircraft&quot; /&gt;
+&lt;img src=&quot;/assets/images/mesher-jet-structured_320.jpg&quot; alt=&quot;image placeholder&quot; title=&quot;Corresponding structured output mesh&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The example above uses an unstructured &lt;a href=&quot;https://en.wikipedia.org/wiki/STL_(file_format)&quot; title=&quot;stereolithography file format&quot;&gt;STL&lt;/a&gt; mesh of a &lt;a href=&quot;https://en.wikipedia.org/wiki/Saab_37_Viggen&quot;&gt;Saab Viggen&lt;/a&gt; jet fighter that is available from &lt;a href=&quot;http://www.3dvia.com/content/2C7A92223406182A&quot;&gt;3dvia&lt;/a&gt;. 
+The unstructured mesh has been mapped onto a cubic structures mesh using the new mesher. The software is script-driven 
+using the &lt;a href=&quot;https://www.mathworks.com/products/matlab&quot;&gt;MATLAB&lt;/a&gt;/&lt;a href=&quot;https://www.gnu.org/software/octave&quot;&gt;GNU Octave&lt;/a&gt; language which allows it to be easily extended and combined with other phases of an 
+overall simulation work-flow.&lt;/p&gt;
+
+&lt;p&gt;The mesher originated as the project of &lt;a href=&quot;http://en.wikipedia.org/wiki/Erasmus_Programme&quot;&gt;Erasmus Programme&lt;/a&gt; student Mr Michael Berens from the 
+&lt;a href=&quot;http://www.uni-hannover.de/en&quot;&gt;Leibnitz Universität Hannover&lt;/a&gt; during his internship at the &lt;a href=&quot;http://www.york.ac.uk&quot;&gt;University of York&lt;/a&gt; in 2013. I have 
+since worked on turning the prototype code into a more user focussed modular software package with a 
+test-suite, user documentation and tutorial. I have also added a bounding volume hierarchy (&lt;a href=&quot;https://en.wikipedia.org/wiki/Bounding_volume_hierarchy&quot;&gt;BVH&lt;/a&gt;) to 
+improve the efficiency of the mapping stage of the mesh generation.&lt;/p&gt;
+
+&lt;p&gt;Full details of the work can be found in the paper &lt;a href=&quot;#Berens2016&quot;&gt;(Berens, Flintoft and Dawson, 2016)&lt;/a&gt; and the &lt;a href=&quot;https://bitbucket.org/uoyaeg/aegmesher&quot; title=&quot;AEG structured mesh generator&quot;&gt;AEG Mesher&lt;/a&gt; website.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Berens2016&quot;&gt;Berens, M.K., Flintoft, I.D. and Dawson, J.F., 2016. Structured mesh generation: Open-source automatic nonuniform mesh generation for FDTD simulation. &lt;i&gt;IEEE Antennas and Propagation Magazine&lt;/i&gt;, 58(3), pp.45–55.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/MAP.2016.2541606&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/46384800/JournalAPM_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;The finite-difference time-domain (FDTD) method is a numerical technique that is widely used to solve Maxwell’s differential equations in the time domain [1]. Both space and time are discretized. Space is discretized into rectangular-shaped elements in two-dimensional (2-D) or cuboid elements in three-dimensional (3-D). Cuboid elements, where the electric fields are located on the edges of the cuboid and the magnetic fields are normal to the faces, are called Yee cells and are the fundamental elements of most FDTD methods [2]. By filling up the problem space with these cells, we obtain a 3-D mesh, where neighboring cells share edges and faces. Each cell has three associated electric and magnetic field components, while the other field components belong to adjacent cells. The properties of each cell are adjusted to represent materials such as dielectrics or conductors by adjusting the constitutive parameters used in the field equations in the corresponding cells, hence forming the geometrical structure of the problem to be solved. For example, Figure 1 shows a sphere and a version of the sphere discretized using cubic elements.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Berens2016,
+  author = {Berens, M. K. and Flintoft, I. D. and Dawson, J. F.},
+  title = {Structured mesh generation: Open-source automatic nonuniform mesh generation for FDTD simulation},
+  journal = {IEEE Antennas and Propagation Magazine},
+  year = {2016},
+  volume = {58},
+  number = {3},
+  pages = {45-55},
+  month = jun,
+  issn = {1045-9243},
+  note = {Date of acceptance: 08/02/2016. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/MAP.2016.2541606},
+  file = {:pdfs/APM58-Berens-45.pdf:PDF},
+  keywords = {Design automation;Finite difference methods;Geometry;Mesh generation;Numerical models;Solid modeling;Time-domain analysis},
+  postprint = {https://pure.york.ac.uk/portal/files/46384800/JournalAPM_postprint.pdf},
+  publisher = {IEEE}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Article on a new open source structured mesh generator for electromagnetic simulation tools accepted for publication in IEEE Antennas and Propagation Magazine.</summary></entry><entry><title type="html">Paper on PCB absorption cross-section measurements in reverberation chamber</title><link href="https://flintoftd.github.io/temc-pcb-acs-paper/" rel="alternate" type="text/html" title="Paper on PCB absorption cross-section measurements in reverberation chamber" /><published>2015-12-29T00:00:00+00:00</published><updated>2015-12-29T00:00:00+00:00</updated><id>https://flintoftd.github.io/temc-pcb-acs-paper</id><content type="html" xml:base="https://flintoftd.github.io/temc-pcb-acs-paper/">&lt;p&gt;Paper on measured average absorption cross-section of printed circuit boards (PCBs) 
+accepted for publication in &lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15&quot;&gt;IEEE Transaction on Electromagnetic Compatibility&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Absorption by the contents of an equipment enclosure, particularly PCBs, affect the 
+enclosure’s shielding performance. At high frequencies we propose that this absorption 
+can be quantified using the angle of arrival and polarization averaged absorption 
+cross-section (ACS), which can be measured in a reverberation chamber. This paper
+presents the measured average ACS of a large number of PCBs taken from contemporary 
+information and communication technology (ICT) equipment to provide a unique and 
+comprehensive dataset for developing high frequency shielding methodologies.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/temc-pcb-acs-pcbs_320.jpg&quot; alt=&quot;placeholder&quot; title=&quot;Structure of different classes of PCB measured&quot; /&gt;
+&lt;img src=&quot;/assets/images/temc-pcb-acs-classes_320.jpg&quot; alt=&quot;placeholder&quot; title=&quot;Measured ACS of PCBs in the different classes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The images above show a photograph of one PCB from each of the classes of PCB identified and the
+measured average ACS of the all the PCBs coloured according to their class.&lt;/p&gt;
+
+&lt;p&gt;This work was part of the collaborative 
+&lt;a href=&quot;/projects/huawei_shielding_2014.html&quot;&gt;shielding measurement of electrically large enclosures with contents&lt;/a&gt;
+project between &lt;a href=&quot;http://www.huawei.com/en&quot;&gt;Huawei Technologies&lt;/a&gt; and the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt;. See the paper &lt;a href=&quot;#Flintoft2016a&quot;&gt;(Flintoft et al., 2016)&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Flintoft2016a&quot;&gt;Flintoft, I.D., Parker, S.L., Bale, S.J., Marvin, A.C., Dawson, J.F. and Robinson, M.P., 2016. Measured average absorption cross-sections of printed circuit boards from 2 to 20 GHz. &lt;i&gt;IEEE Transactions on Electromagnetic Compatibility&lt;/i&gt;, 58(2), pp.553–560.&lt;/span&gt;&lt;br /&gt;
+ &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/TEMC.2016.2515658&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+
+ &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/46384073/TEMC58_Flintoft_et_al_553_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-content&quot;&gt;
+    &lt;p&gt;Absorption by the contents of an equipment enclosure, particularly printed circuit boards (PCBs), affect the enclosure’s shielding performance. At high frequencies, this absorption can be quantified using the angle of arrival and polarization averaged absorption cross-section (ACS). However, there is no available data on the high-frequency absorption characteristics of modern PCBs. In this study, we apply a reverberation chamber to the determination of the average ACS of a large number of PCBs taken from contemporary information and communication technology (ICT) equipment to provide a unique and comprehensive dataset. The ACS was found to range from 4 × 10-4-10-2 m2 from 2-20 GHz and different classes of PCB could be identified according to their surface characteristics. The “shadowing effect” of densely packed PCBs was also quantified for a subset of the PCBs. It was found that the ACS of a PCB in the stack was reduced by 20%-40% compared to its value when isolated. By way of a review of the general power balance analysis of an electrically large populated equipment enclosure in an external environment, we show how the acquired data will be useful for future qualification methodologies for ICT enclosures and PCBs.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+  &lt;div class=&quot;dropdown-contentx&quot;&gt;
+    &lt;pre&gt;@article{Flintoft2016a,
+  author = {Flintoft, I. D. and Parker, S. L. and Bale, S. J. and Marvin, A. C. and Dawson, J. F. and Robinson, M. P.},
+  title = {Measured average absorption cross-sections of printed circuit boards from 2 to 20 GHz},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2016},
+  volume = {58},
+  number = {2},
+  pages = {553-560},
+  month = apr,
+  issn = {0018-9375},
+  note = {Date of acceptance: 29/12/2015. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/TEMC.2016.2515658},
+  file = {:pdfs/TEMC58-Flintoft-553.pdf:PDF},
+  keywords = {shielding, printed circuit board, absorption cross-section, reverberation chamber, immunity, emissions, power balance},
+  postprint = {https://pure.york.ac.uk/portal/files/46384073/TEMC58_Flintoft_et_al_553_postprint.pdf},
+  publisher = {IEEE}
+}
+&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Paper on measured average absorption cross-section of printed circuit boards (PCBs) accepted for publication in IEEE Transaction on Electromagnetic Compatibility.</summary></entry></feed>

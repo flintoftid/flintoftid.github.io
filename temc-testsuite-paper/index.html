@@ -1,0 +1,755 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Paper on a validation test-suite for CEM solvers - Ian D. Flintoft</title>
+<meta name="description" content="Paper on a validation and verification test-suite for computational electromagnetics solversaccepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Ian D. Flintoft">
+<meta property="og:title" content="Paper on a validation test-suite for CEM solvers">
+<meta property="og:url" content="https://flintoftd.github.io/temc-testsuite-paper/">
+
+
+  <meta property="og:description" content="Paper on a validation and verification test-suite for computational electromagnetics solversaccepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2016-07-31T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://flintoftd.github.io/temc-testsuite-paper/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Ian D. Flintoft",
+      "url": "https://flintoftd.github.io",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://flintoftd.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Ian D. Flintoft Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://flintoftd.github.io/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://flintoftd.github.io/">Ian D. Flintoft</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/about/" >About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/projects/projects.html" >Projects</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/software/software.html" >Software</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/resources/resources.html" >Resources</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/publications/publications.html" >Publications</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/year-archive/" >Posts</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="https://flintoftd.github.io/assets/images/bio-photo.jpg" alt="Ian Flintoft" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Ian Flintoft</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Engineer & scienitst specialising in electromagnetics
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">York, UK</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:ian.flintoft@googlemail.com">
+            <meta itemprop="email" content="ian.flintoft@googlemail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/ianflintoft" itemprop="sameAs">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/flintoftid" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+            
+        <li>
+          <a href="https://ieee-collabratec.ieee.org/app/p/ian-flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-ieee-square" aria-hidden="true"></i> IEEE
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://www.researchgate.net/profile/Ian_Flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-researchgate-square" aria-hidden="true"></i> ResearchGate
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://scholar.google.co.uk/citations?user=2RZgeUQAAAAJ" itemprop="sameAs">
+            <i class="ai ai-fw ai-google-scholar-square" aria-hidden="true"></i> Google Scholar
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://orcid.org/0000-0003-3153-8447" itemprop="sameAs">
+            <i class="ai ai-fw ai-orcid-square" aria-hidden="true"></i> OrcID
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://publons.com/a/1240129" itemprop="sameAs">
+            <i class="ai ai-fw ai-publons-square" aria-hidden="true"></i> Publons
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://www.mendeley.com/profiles/ian-flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-mendeley-square" aria-hidden="true"></i> Mendeley
+          </a>
+        </li>
+      
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Paper on a validation test-suite for CEM solvers">
+    <meta itemprop="description" content="Paper on a validation and verification test-suite for computational electromagnetics solversaccepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+    <meta itemprop="datePublished" content="July 31, 2016">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Paper on a validation test-suite for CEM solvers
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Paper on a validation and verification test-suite for computational electromagnetics solvers
+accepted for publication in <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15">IEEE Transaction on Electromagnetic Compatibility</a>.</p>
+
+<p>This collaborative paper with <a href="https://www.ugr.es/en" title="University of Granada">The University of Granada</a> presents a suite of validation test cases for 
+computational electromagnetics (<a href="http://en.wikipedia.org/wiki/Computational_electromagnetics">CEM</a>) simulation tools. The test-cases presented were designed to 
+be representative of typical electromagnetic compatibility (<a href="https://en.wikipedia.org/wiki/Electromagnetic_compatibility">EMC</a>) applications and are therefore 
+of particular utility for validating tools for use in this application area. The components of the 
+test-suite have been developed by members of the <a href="http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices" title="Applied Electromagnetics Group, University of York">AEG</a> over a number of years, particularly as 
+part of the <a href="http://www.flaviir.com">FLAVIIR</a> project funded jointly by <a href="http://www.baesystems.com">BAES</a> and <a href="http://www.epsrc.ac.uk">EPSRC</a> and the <a href="https://erc.europa.eu">ERC</a> funded High 
+Intensity Radiated Field Synthetic Environment (<a href="http://ec.europa.eu/research/transport/projects/items/hirf_se_en.htm">HIRF SE</a>) research programme.</p>
+
+<p><img src="/assets/images/boxts-cad_320.jpg" alt="placeholder 1" title="CAD model of a test-case" />
+<img src="/assets/images/boxts-hardware_320.jpg" alt="placeholder 2" title="Hardware implementation of a test-case in an anechoic chamber" /></p>
+
+<p>Full details of the work can be found in the paper <a href="#Flintoft2017">(Flintoft et al., 2017)</a> and
+on the <a href="https://bitbucket.org/uoyaeg/aegboxts">test-suite web site</a>. Some of the 
+earlier developments are reported in <a href="#Flintoft2013b">(Flintoft et al., 2013; Tallini et al., 2011; Christopoulos et al., 2010; Dawson et al., 2008)</a>.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="Flintoft2017">Flintoft, I.D., Dawson, J.F., Dawson, L., Marvin, A.C., Alvarez, J. and Garcia, S.G., 2017. A modular testsuite for the validation and verification of electromagnetic solvers in electromagnetic compatibility applications. <i>IEEE Transactions on Electromagnetic Compatibility</i>, 59(1), pp.111–118.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1109/TEMC.2016.2599004"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+ <a class="bib-materials" href="https://pure.york.ac.uk/portal/files/50264571/TEMC59_Flintoft_111_postprint.pdf"><i class="ai ai-fw ai-open-access" aria-hidden="true"></i></a> 
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>Computational solvers are increasingly used to solve complex electromagnetic compatibility (EMC) problems in research, product design, and manufacturing. The reliability of these simulation tools must be demonstrated in order to give confidence in their results. Standards prescribe a range of techniques for the validation, verification, and calibration of computational electromagnetics solvers including external references based on measurement or for cross-validation with other models. We have developed a modular test-suite based on an enclosure to provide the EMC community with a complex external reference for model validation. We show how the test-suite can be used to validate a range of electromagnetic solvers. The emphasis of the test-suite is on the features of interest for EMC applications, such as apertures and coupling to cables. We have fabricated a hardware implementation of many of the test-cases and measured them in an anechoic chamber over the frequency range to 1–6 GHz to provide a measurement reference for validation over this range. The test-suite has already been used extensively in two major aeronautical research programs and is openly available for use and future development by the community.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@article{Flintoft2017,
+  author = {Flintoft, I. D. and Dawson, J. F. and Dawson, L. and Marvin, A. C. and Alvarez, J. and Garcia, S. G.},
+  title = {A modular testsuite for the validation and verification of electromagnetic solvers in electromagnetic compatibility applications},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2017},
+  volume = {59},
+  number = {1},
+  pages = {111-118},
+  month = feb,
+  issn = {0018-9375},
+  note = {Date of acceptance: 31/07/2016. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/TEMC.2016.2599004},
+  file = {:pdfs/TEMC59-Flintoft-111.pdf:PDF},
+  keywords = {computational electromagnetics, validation, verification, benchmark problems},
+  postprint = {https://pure.york.ac.uk/portal/files/50264571/TEMC59_Flintoft_111_postprint.pdf},
+  publisher = {IEEE}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Flintoft2013b">Flintoft, I.D., Dawson, J.F., Dawson, L. and Marvin, A.C., 2013. A modular test-case for validation of electromagnetic solvers in electromagnetic compatibility applications. In: <i>Computational Electromagnetics for EMC 2013 (CEMEMC’13)</i>. Granada, Spain.</span><br />
+
+
+
+
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@conference{Flintoft2013b,
+  author = {Flintoft, I. D. and Dawson, J. F. and Dawson, L. and Marvin, A. C.},
+  title = {A modular test-case for validation of electromagnetic solvers in electromagnetic compatibility applications},
+  booktitle = {Computational Electromagnetics for EMC 2013 (CEMEMC’13)},
+  year = {2013},
+  address = {Granada, Spain},
+  month = {19-21 March},
+  file = {:pdfs/CEMEMC2013-Flintoft-1.pdf:PDF},
+  owner = {idf1},
+  timestamp = {2016.10.12}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Tallini2011">Tallini, D., Dawson, J.F., Flintoft, I.D., Kunze, M. and Munteanu, I., 2011. Virtual HIRF tests in CST STUDIO SUITE;. A reverberant environment application. In: <i>Proceedings of the 2011 International Conference on Electromagnetics
+	in Advanced Applications, ICEAA2011</i>. Torino, Italy, pp.849–852.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1109/ICEAA.2011.6046454"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>This paper provides an example of a reverberant environment application. A metallic box in different configurations has been simulated with CST STUDIO SUITE™ and the calculated results have been compared to measurements.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@inproceedings{Tallini2011,
+  isbn = {978-1-61284-976-8},
+  booktitle = {Proceedings of the 2011 International Conference on Electromagnetics
+  	in Advanced Applications, ICEAA2011},
+  month = {12-16 September},
+  address = {Torino, Italy},
+  author = {Tallini, D. and Dawson, J. F. and Flintoft, I. D. and Kunze, M. and Munteanu, I.},
+  title = {Virtual HIRF tests in CST STUDIO SUITE;. A reverberant environment application},
+  year = {2011},
+  pages = {849--852},
+  doi = {10.1109/ICEAA.2011.6046454},
+  file = {:pdfs/ICEAA2011-Tallini-849.pdf:PDF},
+  keywords = {computational electromagnetics;reverberation;CST STUDIO SUITE;metallic box;reverberant environment application;virtual HIRF test;Aperture antennas;Frequency domain analysis;Probes;Receiving antennas;Time domain analysis},
+  owner = {idf1},
+  timestamp = {2013.09.17}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Christopoulos2010">Christopoulos, C., Dawson, J.F., Dawson, L., Flintoft, I.D., Hassan, O., Marvin, A.C., K. Morgan, and, Sewell, P., Smartt, C.J. and Xie, Z.Q., 2010. Characterization and modelling of electromagnetic interactions in aircraft. <i>Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering</i>, [online] 224(4), pp.449–458.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1243/09544100JAERO567"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+ <a class="bib-materials" href="http://pig.sagepub.com/content/224/4/449.abstract"><i class="fa fa-fw fa-download" aria-hidden="true"></i></a> 
+
+
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>This article describes the development of modelling techniques and simulation tools for the electromagnetic (EM) analysis of aircraft. It is shown that hybrid solvers and multi-scale techniques can be used effectively to analyse the EM response of aircraft. The importance of supplementing models with appropriate measurement and characterization techniques for parameter extraction and for validation is also demonstrated.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@article{Christopoulos2010,
+  author = {Christopoulos, C. and Dawson, J. F. and Dawson, L. and Flintoft, I. D. and Hassan, O. and Marvin, A. C. and and K. Morgan and Sewell, P. and Smartt, C. J. and Xie, Z. Q.},
+  title = {Characterization and modelling of electromagnetic interactions in aircraft},
+  journal = {Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering},
+  year = {2010},
+  volume = {224},
+  number = {4},
+  pages = {449--458},
+  month = apr,
+  note = {Special issue on the Flapless Airvehicle Integrated Industrial Research (FLAVIIR) Programme in Aeronautical Engineering},
+  doi = {10.1243/09544100JAERO567},
+  eprint = {http://pig.sagepub.com/content/224/4/449.full.pdf+html},
+  file = {:pdfs/PIMEGJAE224-Christopoulos-449.pdf:PDF},
+  owner = {idf1},
+  timestamp = {2013.09.02},
+  url = {http://pig.sagepub.com/content/224/4/449.abstract}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Dawson2008">Dawson, J.F., Smartt, C.J., Flintoft, I.D. and Christopoulos, C., 2008. Validating a numerical electromagnetic solver in a reverberant environment. In: <i>4th IEE International Conference on Computation in Electromagnetics (CEM2002)</i>. Bournemouth, UK: IEE, pp.42–43.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1049/cp:20080214"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+ <a class="bib-materials" href="https://pure.york.ac.uk/portal/files/4881944/Dawson2008a_IET_CEM.pdf"><i class="ai ai-fw ai-open-access" aria-hidden="true"></i></a> 
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>This paper presents some thoughts on how to compare the results from a numerical electromagnetic solver with measured data in a reverberant environment where a large number of resonant modes are present in the data.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@inproceedings{Dawson2008,
+  booktitle = {4th IEE International Conference on Computation in Electromagnetics (CEM2002)},
+  month = {9-11 April},
+  publisher = {IEE},
+  address = {Bournemouth, UK},
+  number = {2002/063},
+  author = {Dawson, J. F. and Smartt, C. J. and Flintoft, I. D. and Christopoulos, C.},
+  title = {Validating a numerical electromagnetic solver in a reverberant environment},
+  year = {2008},
+  pages = {42--43},
+  doi = {10.1049/cp:20080214},
+  file = {:pdfs/CEM2008-Dawson-42.pdf:PDF},
+  keywords = {computational electromagnetics;electromagnetic fields;computational electromagnetics;numerical electromagnetic solver;resonant modes;reverberant environment;computational electromagnetics;q-factor;reverberation;validation},
+  owner = {idf1},
+  postprint = {https://pure.york.ac.uk/portal/files/4881944/Dawson2008a_IET_CEM.pdf},
+  timestamp = {2013.09.13}
+}
+</pre>
+  </div>
+</div>
+</li></ol>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-07-31T00:00:00+01:00">July 31, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Paper+on+a+validation+test-suite+for+CEM+solvers%20https%3A%2F%2Fflintoftd.github.io%2Ftemc-testsuite-paper%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fflintoftd.github.io%2Ftemc-testsuite-paper%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fflintoftd.github.io%2Ftemc-testsuite-paper%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fflintoftd.github.io%2Ftemc-testsuite-paper%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://flintoftd.github.io/mst-acs-award/" class="pagination--pager" title="IOP Measurement Science and Technology Outstanding Paper Award 2015
+">Previous</a>
+    
+    
+      <a href="https://flintoftd.github.io/temc-nonwoven-paper/" class="pagination--pager" title="Paper on modelling the shielding characteristics of nonwoven fabrics
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/edm-update/" rel="permalink">Electromagnetic Diffusion Model Updates
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Added Electromagnetic Diffusion Model Implementation Notes to the resources section and a summary of the associated Open Source 
+Electromagnetic Diffusion Mo...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/resources-section/" rel="permalink">New resources section
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">New resources section for notes, examples and other material.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/temc-diffusion-paper/" rel="permalink">Paper on diffusion of reverberant energy
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Paper on diffusion of reverberant electromagnetic energy in enclosed spaces 
+accepted for publication in IEEE Transaction on Electromagnetic Compatibility.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/temc-nonwoven-paper/" rel="permalink">Paper on modelling the shielding characteristics of nonwoven fabrics
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Paper on modelling the low frequency shielding effectiveness of nonwoven fabrics
+accepted for publication in IEEE Transaction on Electromagnetic Compatibilit...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/flintoftid"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://flintoftd.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Ian D. Flintoft. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="https://flintoftd.github.io/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

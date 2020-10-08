@@ -1,0 +1,694 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Paper on diffusion of reverberant energy - Ian D. Flintoft</title>
+<meta name="description" content="Paper on diffusion of reverberant electromagnetic energy in enclosed spaces accepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Ian D. Flintoft">
+<meta property="og:title" content="Paper on diffusion of reverberant energy">
+<meta property="og:url" content="https://flintoftd.github.io/temc-diffusion-paper/">
+
+
+  <meta property="og:description" content="Paper on diffusion of reverberant electromagnetic energy in enclosed spaces accepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2016-10-23T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://flintoftd.github.io/temc-diffusion-paper/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Ian D. Flintoft",
+      "url": "https://flintoftd.github.io",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://flintoftd.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Ian D. Flintoft Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://flintoftd.github.io/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://flintoftd.github.io/">Ian D. Flintoft</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/about/" >About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/projects/projects.html" >Projects</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/software/software.html" >Software</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/resources/resources.html" >Resources</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/publications/publications.html" >Publications</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/year-archive/" >Posts</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="https://flintoftd.github.io/assets/images/bio-photo.jpg" alt="Ian Flintoft" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Ian Flintoft</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Engineer & scienitst specialising in electromagnetics
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">York, UK</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:ian.flintoft@googlemail.com">
+            <meta itemprop="email" content="ian.flintoft@googlemail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/ianflintoft" itemprop="sameAs">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/flintoftid" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+            
+        <li>
+          <a href="https://ieee-collabratec.ieee.org/app/p/ian-flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-ieee-square" aria-hidden="true"></i> IEEE
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://www.researchgate.net/profile/Ian_Flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-researchgate-square" aria-hidden="true"></i> ResearchGate
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://scholar.google.co.uk/citations?user=2RZgeUQAAAAJ" itemprop="sameAs">
+            <i class="ai ai-fw ai-google-scholar-square" aria-hidden="true"></i> Google Scholar
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://orcid.org/0000-0003-3153-8447" itemprop="sameAs">
+            <i class="ai ai-fw ai-orcid-square" aria-hidden="true"></i> OrcID
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://publons.com/a/1240129" itemprop="sameAs">
+            <i class="ai ai-fw ai-publons-square" aria-hidden="true"></i> Publons
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://www.mendeley.com/profiles/ian-flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-mendeley-square" aria-hidden="true"></i> Mendeley
+          </a>
+        </li>
+      
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Paper on diffusion of reverberant energy">
+    <meta itemprop="description" content="Paper on diffusion of reverberant electromagnetic energy in enclosed spaces accepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+    <meta itemprop="datePublished" content="October 23, 2016">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Paper on diffusion of reverberant energy
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Paper on diffusion of reverberant electromagnetic energy in enclosed spaces 
+accepted for publication in <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15">IEEE Transaction on Electromagnetic Compatibility</a>.</p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Diffusion_equation">diffusion equation</a> approach to simulating high-frequency electromagnetic fields
+has a very low computational cost compared to other applicable techniques, offering the 
+potential for a radical increase in the efficiency of the solution high frequency electromagnetic 
+shielding problems with complex topologies. This paper makes an initial evaluation of the 
+method’s utility for <a href="https://en.wikipedia.org/wiki/Electromagnetic_compatibility">electromagnetic compatibility</a> applications.</p>
+
+<p><img src="/assets/images/diffusion.jpg" alt="Diffusion of diffuse energy between two cavities" title="Diffusion of diffuse energy between two cavities" class="align-center" /></p>
+
+<p>The image above shows a cross-sectional view of the the flux of the reverberant energy 
+density at 8 GHz in two cubic cavities coupled by a slot along one edge of the adjoining 
+wall. The cavity on the left has a source of total radiated power 1 watt located near the 
+wall and the cavity on the right contains a highly absorbing cylinder which acts as the “sink”
+for most of the power. The solution was obtained in under one second on a desktop PC.</p>
+
+<p>The idea of transferring the diffusion equation approach from acoustics to electromagnetics 
+arose from work on using reverberations chambers to study electromagnetic exposure. “Room acoustics” 
+had already been taken over to “room electromagnetics” (<a href="http://dx.doi.org/10.1109/MAP.2007.376642" title="J. B. Andersen, J. O. Nielsen, G. F. Pedersen, G. Bauch and M. Herdin, Room electromagnetics, IEEE Antennas Propag. Mag., vol. 49, no. 2, pp. 27-33, April 2007">Andersen2007</a>) as a method of studying environmental
+exposure, which led me into the substantial acoustics literature on reverberation. Meanwhile my
+work on high frequency enclosure shielding effectiveness simulations was demonstrating the huge computational resource
+required to obtain results using “full-wave” techniques like <a href="https://en.wikipedia.org/wiki/Finite-difference_time-domain_method" title="Finite-difference time-domain method">FDTD</a>.</p>
+
+<p>Full details of the work can be found in the papers <a href="#Flintoft2017c">(Flintoft and Dawson, 2017; Robinson et al., 2017; Flintoft et al., 2017)</a>.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="Flintoft2017b">Flintoft, I.D., Marvin, A.C., Funn, F.I., Dawson, L., Zhang, X., Robinson, M.P. and Dawson, J.F., 2017. Evaluation of the diffusion equation for modelling reverberant electromagnetic fields. <i>IEEE Transactions on Electromagnetic Compatibility</i>, 59(3), pp.760–769.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1109/TEMC.2016.2623356"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+ <a class="bib-materials" href="https://pure.york.ac.uk/portal/files/52005745/TEMC_Flintoft_et_al_postprint.pdf"><i class="ai ai-fw ai-open-access" aria-hidden="true"></i></a> 
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>Determination of the distribution of electromagnetic energy inside electrically large enclosed spaces is important in many electromagnetic compatibility applications, such as certification of aircraft and equipment shielding enclosures. The field inside such enclosed environments contains a dominant diffuse component due to multiple randomizing reflections from the enclosing surfaces. The power balance technique has been widely applied to the analysis of such problems; however, it is unable to account for the inhomogeneities in the field that arise when the absorption in the walls and contents of the enclosure is significant. In this paper we show how a diffusion equation approach can be applied to modeling diffuse electromagnetic fields and evaluate its potential for use in electromagnetic compatibility applications. Two canonical examples were investigated: A loaded cavity and two cavities coupled by a large aperture. The predictions of the diffusion model were compared to measurement data and found to be in good agreement. The diffusion model has a very low computational cost compared to other applicable techniques, such as full-wave simulation and ray-tracing, offering the potential for a radical increase in the efficiency of the solution high frequency electromagnetic shielding problems with complex topologies.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@article{Flintoft2017b,
+  author = {Flintoft, I. D. and Marvin, A. C. and Funn, F. I. and Dawson, L. and Zhang, X. and Robinson, M. P. and Dawson, J. F.},
+  title = {Evaluation of the diffusion equation for modelling reverberant electromagnetic fields},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2017},
+  volume = {59},
+  number = {3},
+  pages = {760-769},
+  month = jun,
+  note = {Date of acceptance: 23/10/2016. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/TEMC.2016.2623356},
+  file = {:pdfs/TEMC59-Flintoft-760.pdf:PDF},
+  keywords = {asymptotic techniques, power balance, absorption cross-section, reverberation chamber, shielding},
+  owner = {idf1},
+  postprint = {https://pure.york.ac.uk/portal/files/52005745/TEMC_Flintoft_et_al_postprint.pdf},
+  timestamp = {2016.10.25}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Robinson2017">Robinson, M.P., Flintoft, I.D., Dawson, J.F., Marvin, A.C., Funn, F.I., Dawson, L. and Zhang, X., 2017. Effect of loading on field uniformity: Energy diffusion in reverberant environments. In: <i>Proceedings of the XXXIInd General Assembly and Scientific Symposium of the International Union of Radio Science</i>. Montreal, Canada, pp.E13–2.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.23919/URSIGASS.2017.8105133"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+ <a class="bib-materials" href="https://pure.york.ac.uk/portal/files/51708848/EDM_Review_submitted.pdf"><i class="ai ai-fw ai-open-access" aria-hidden="true"></i></a> 
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>In reverberant electromagnetic environments such as reverberation chambers, shielding enclosures, vehicles and buildings, the electromagnetic energy density is often assumed to be uniform and the direction of arrival of electromagnetic waves (Poynting vector) and their polarisation is assumed uniformly distributed. This is the basis of the power balance method for electromagnetic coupling analysis and much of the theory of reverberation chambers. However significant field inhomogeneity is often encountered in practice when significant losses are present. In this paper we show why this must be so when an energy flow exists from the source of energy to absorptive elements, and how the non-uniformity can be determined using a diffusion based solution. The diffusion based solution, though not as computationally efficient as the power balance method, is still much more efficient than a full-wave approach.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@inproceedings{Robinson2017,
+  timestamp = {2013.08.28},
+  owner = {idf1},
+  booktitle = {Proceedings of the XXXIInd General Assembly and Scientific Symposium of the International Union of Radio Science},
+  month = {19-26 August},
+  address = {Montreal, Canada},
+  author = {Robinson, M P and Flintoft, I D and Dawson, J F and Marvin, A C and Funn, F I and Dawson, L and Zhang, X},
+  title = {Effect of loading on field uniformity: Energy diffusion in reverberant environments},
+  year = {2017},
+  pages = {E13-2},
+  doi = {10.23919/URSIGASS.2017.8105133},
+  file = {:pdfs/URSI2017-Robinson-E13-2.pdf:PDF},
+  postprint = {https://pure.york.ac.uk/portal/files/51708848/EDM_Review_submitted.pdf}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Flintoft2017c">Flintoft, I.D. and Dawson, J.F., 2017. 3D electromagnetic diffusion models for reverberant environments. In: <i>2017 International Conference on Electromagnetics in Advanced Applications (ICEAA2017)</i>. Verona, Italy, pp.511–514.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1109/ICEAA.2017.8065293"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+ <a class="bib-materials" href="https://pure.york.ac.uk/portal/files/52659135/ICEAA_3D_EDM_v4_postprint.pdf"><i class="ai ai-fw ai-open-access" aria-hidden="true"></i></a> 
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>Diffusion equation based modeling has been proposed for mapping the reverberant component of the electromagnetic field in enclosures at high frequencies. Preliminary evaluation of the electromagnetic diffusion model using a dimensional reduction approach showed promising results compared to measurements. Here we develop a full three-dimensional diffusion model of the experimental canonical test cases considered in the preliminary evaluation and obtain finite element method solutions. The results are compared to those of the two-dimensional models. We find that the two and three dimensional models are generally in excellent agreement for the pseudo two-dimensional test-cases considered. Some deviations between the two- and three-dimensional models are observed due to the fact the point source must be effectively represented by a line source in the reduced model. The three-dimensional model is still highly efficient compared to other applicable techniques, offering the prospect of a radical reduction in the resources required for simulating reverberant fields in electrically large structures.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@inproceedings{Flintoft2017c,
+  booktitle = {2017 International Conference on Electromagnetics in Advanced Applications (ICEAA2017)},
+  month = {11-15 September},
+  address = {Verona, Italy},
+  author = {Flintoft, I. D. and Dawson, J. F.},
+  title = {3D electromagnetic diffusion models for reverberant environments},
+  year = {2017},
+  pages = {511-514},
+  doi = {10.1109/ICEAA.2017.8065293},
+  file = {:pdfs/ICEAA2017-Flintoft-511.pdf:PDF},
+  keywords = {asymptotic techniques, power balance, absorption cross-section},
+  postprint = {https://pure.york.ac.uk/portal/files/52659135/ICEAA_3D_EDM_v4_postprint.pdf}
+}
+</pre>
+  </div>
+</div>
+</li></ol>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-10-23T00:00:00+01:00">October 23, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Paper+on+diffusion+of+reverberant+energy%20https%3A%2F%2Fflintoftd.github.io%2Ftemc-diffusion-paper%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fflintoftd.github.io%2Ftemc-diffusion-paper%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fflintoftd.github.io%2Ftemc-diffusion-paper%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fflintoftd.github.io%2Ftemc-diffusion-paper%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://flintoftd.github.io/temc-nonwoven-paper/" class="pagination--pager" title="Paper on modelling the shielding characteristics of nonwoven fabrics
+">Previous</a>
+    
+    
+      <a href="https://flintoftd.github.io/resources-section/" class="pagination--pager" title="New resources section
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/edm-update/" rel="permalink">Electromagnetic Diffusion Model Updates
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Added Electromagnetic Diffusion Model Implementation Notes to the resources section and a summary of the associated Open Source 
+Electromagnetic Diffusion Mo...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/resources-section/" rel="permalink">New resources section
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">New resources section for notes, examples and other material.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/temc-nonwoven-paper/" rel="permalink">Paper on modelling the shielding characteristics of nonwoven fabrics
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Paper on modelling the low frequency shielding effectiveness of nonwoven fabrics
+accepted for publication in IEEE Transaction on Electromagnetic Compatibilit...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/temc-testsuite-paper/" rel="permalink">Paper on a validation test-suite for CEM solvers
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Paper on a validation and verification test-suite for computational electromagnetics solvers
+accepted for publication in IEEE Transaction on Electromagnetic ...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/flintoftid"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://flintoftd.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Ian D. Flintoft. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="https://flintoftd.github.io/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

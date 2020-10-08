@@ -1,0 +1,703 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Paper on modelling the shielding characteristics of nonwoven fabrics - Ian D. Flintoft</title>
+<meta name="description" content="Paper on modelling the low frequency shielding effectiveness of nonwoven fabricsaccepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Ian D. Flintoft">
+<meta property="og:title" content="Paper on modelling the shielding characteristics of nonwoven fabrics">
+<meta property="og:url" content="https://flintoftd.github.io/temc-nonwoven-paper/">
+
+
+  <meta property="og:description" content="Paper on modelling the low frequency shielding effectiveness of nonwoven fabricsaccepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2016-08-04T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://flintoftd.github.io/temc-nonwoven-paper/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Ian D. Flintoft",
+      "url": "https://flintoftd.github.io",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://flintoftd.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Ian D. Flintoft Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://flintoftd.github.io/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://flintoftd.github.io/">Ian D. Flintoft</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/about/" >About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/projects/projects.html" >Projects</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/software/software.html" >Software</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/resources/resources.html" >Resources</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/publications/publications.html" >Publications</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://flintoftd.github.io/year-archive/" >Posts</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="https://flintoftd.github.io/assets/images/bio-photo.jpg" alt="Ian Flintoft" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Ian Flintoft</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Engineer & scienitst specialising in electromagnetics
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">York, UK</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:ian.flintoft@googlemail.com">
+            <meta itemprop="email" content="ian.flintoft@googlemail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/ianflintoft" itemprop="sameAs">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/flintoftid" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+            
+        <li>
+          <a href="https://ieee-collabratec.ieee.org/app/p/ian-flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-ieee-square" aria-hidden="true"></i> IEEE
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://www.researchgate.net/profile/Ian_Flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-researchgate-square" aria-hidden="true"></i> ResearchGate
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://scholar.google.co.uk/citations?user=2RZgeUQAAAAJ" itemprop="sameAs">
+            <i class="ai ai-fw ai-google-scholar-square" aria-hidden="true"></i> Google Scholar
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://orcid.org/0000-0003-3153-8447" itemprop="sameAs">
+            <i class="ai ai-fw ai-orcid-square" aria-hidden="true"></i> OrcID
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://publons.com/a/1240129" itemprop="sameAs">
+            <i class="ai ai-fw ai-publons-square" aria-hidden="true"></i> Publons
+          </a>
+        </li>
+      
+      
+        <li>
+          <a href="https://www.mendeley.com/profiles/ian-flintoft" itemprop="sameAs">
+            <i class="ai ai-fw ai-mendeley-square" aria-hidden="true"></i> Mendeley
+          </a>
+        </li>
+      
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Paper on modelling the shielding characteristics of nonwoven fabrics">
+    <meta itemprop="description" content="Paper on modelling the low frequency shielding effectiveness of nonwoven fabricsaccepted for publication in IEEE Transaction on Electromagnetic Compatibility.">
+    <meta itemprop="datePublished" content="August 04, 2016">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Paper on modelling the shielding characteristics of nonwoven fabrics
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Paper on modelling the low frequency shielding effectiveness of nonwoven fabrics
+accepted for publication in <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15">IEEE Transaction on Electromagnetic Compatibility</a>.</p>
+
+<p>Nonwoven fabric materials with conductive fibres are often used as a lightweight 
+functional layer in composite laminates to enhance the overall electromagnetic shielding
+performance of a structure. The structure of these types of material are random and can 
+only be described statistically. In this paper we applied Monte Carlo simulation 
+techniques to an equivalent circuit model of the material structure to derive 
+semi-empirical models for the shielding performance of the material. These models can
+be applied in industry to the design of materials for particular applications.</p>
+
+<p><img src="/assets/images/veil-mesh_640.jpg" alt="image placeholder" title="3D mesh representation of a veil generated by the Monte Carlo simulation tool" class="align-center" /></p>
+
+<p>The image above shows a 3D image of a nonwoven structure derived from a particular structure
+generated by the Monte Carlo simulator. The small spheres denote contact points between
+the fibres which may have a non-zero resistance and therefore contribute to the overall
+surface resistance of the material and hence its shielding effectiveness.</p>
+
+<p>The work in the paper is part of a collaboration between the <a href="http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices" title="Applied Electromagnetics Group, University of York">AEG</a> and <a href="http://www.tfpglobal.com" title="Technical Fibre Products">Technical Fibre Products</a>.
+My particular contribution to the collaboration was initiating the <a href="https://en.wikipedia.org/wiki/Percolation_theory">percolation theory</a> approach
+to the modelling and developing and implementing the Monte Simulation tool in <a href="https://www.mathworks.com/products/matlab">MATLAB</a> using 
+elements of the <a href="https://bitbucket.org/uoyaeg/aegmesher" title="AEG structured mesh generator">AEG Mesher</a> software package.</p>
+
+<p>Full details of the work can be found in the paper <a href="#Dawson2017a">(Dawson et al., 2017; Austin et al., 2015; Austin et al., 2013)</a>.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="Dawson2017a">Dawson, J.F., Austin, A.N., Flintoft, I.D. and Marvin, A.C., 2017. Shielding effectiveness and sheet conductance of nonwoven carbon-fiber sheets. <i>IEEE Transactions on Electromagnetic Compatibility</i>, 59(1), pp.84–92.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1109/TEMC.2016.2601658"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+ <a class="bib-materials" href="https://pure.york.ac.uk/portal/files/50264656/TEMC59_Dawson_84_postprint.pdf"><i class="ai ai-fw ai-open-access" aria-hidden="true"></i></a> 
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>Nonwoven carbon-fiber sheets are often used to form a conductive layer in composite materials for electromagnetic shielding and other purposes. While a large amount of research has considered the properties of similar idealized materials near the percolation threshold, little has been done to provide validated analytic models suitable for materials of practical use for electromagnetic shielding. Since numerical models consume considerable computer resource and do not provide the insight which enables improved material design, an analytic model is of great utility for materials development. This paper introduces a new theoretical model for the sheet conductance of nonwoven carbon-fiber sheets built on the theory of percolation for 2-D conducting stick networks. The model accounts for the effects of sample thickness, fiber angle distribution, and contact conductance on the sheet conductance. The theory shows good agreement with Monte Carlo simulations and measurements of real materials in the supercritical percolation regime where the dimensionless areal concentration of fibers exceeds about 50. The theoretical model allows the rapid prediction of material shielding performance from a limited number of manufacturing parameters.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@article{Dawson2017a,
+  author = {Dawson, J. F. and Austin, A. N. and Flintoft, I. D. and Marvin, A. C.},
+  title = {Shielding effectiveness and sheet conductance of nonwoven carbon-fiber sheets},
+  journal = {IEEE Transactions on Electromagnetic Compatibility},
+  year = {2017},
+  volume = {59},
+  number = {1},
+  pages = {84-92},
+  month = feb,
+  issn = {0018-9375},
+  note = {Date of acceptance: 04/08/2016. © 2016 ESA. Personal use of this material is permitted.},
+  doi = {10.1109/TEMC.2016.2601658},
+  file = {:pdfs/TEMC59-Dawson-84.pdf:PDF},
+  keywords = {electromagnetic shielding effectiveness, percolation theory, sheet conductance, carbon fibre composite, nonwoven fabric},
+  postprint = {https://pure.york.ac.uk/portal/files/50264656/TEMC59_Dawson_84_postprint.pdf},
+  publisher = {IEEE}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Austin2015">Austin, A.N., Dawson, J.F., Flintoft, I.D. and Marvin, A.C., 2015. Modelling the micro-structure of non-uniform conductive non-woven fabrics: Determination of sheet resistance. In: <i>2015 Joint IEEE International Symposium on Electromagnetic Compatibility and EMC Europe</i>. Dresden, Germany: IEEE, pp.1–6.</span><br />
+ <a class="bib-materials" href="http://doi.org/10.1109/ISEMC.2015.7256122"><i class="ai ai-fw ai-doi" aria-hidden="true"></i></a> 
+
+
+ <a class="bib-materials" href="https://pure.york.ac.uk/portal/files/40237334/001_5072_postprint.pdf"><i class="ai ai-fw ai-open-access" aria-hidden="true"></i></a> 
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>The plane-wave shielding effectiveness of conductive non-woven fabrics is dominated by the sheet conductance over a wide range of frequencies until the effects of skin depth, and apertures start to influence the performance (typically at 1-10 GHz depending on the areal density). This paper describes models for determining the sheet conductance from knowledge of the type, quantity, orientation and contact resistance of the fibres in the fabricated material. The stochastic nature of these materials, their complexity and local scale variability has been included in the models and correlates well with experimental results. The anisotropic sheet conductance is modelled to within 1% of the measured value in the high shielding orientation and to within 2% in the orthogonal orientation using an inter-fibre contact resistance estimated to be 10 kΩ.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@inproceedings{Austin2015,
+  issn = {2158-110X},
+  booktitle = {2015 Joint IEEE International Symposium on Electromagnetic Compatibility and EMC Europe},
+  month = {16-22 August},
+  publisher = {IEEE},
+  address = {Dresden, Germany},
+  author = {Austin, A. N. and Dawson, J. F. and Flintoft, I. D. and Marvin, A. C.},
+  title = {Modelling the micro-structure of non-uniform conductive non-woven fabrics: Determination of sheet resistance},
+  year = {2015},
+  pages = {1--6},
+  note = {© 2015 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
+  doi = {10.1109/ISEMC.2015.7256122},
+  file = {:pdfs/EMCE2015-Austin-1.pdf:PDF},
+  keywords = {sheet resistance, shielding effectiveness, stochastic material, contact resistance, anisotropic material, circuit model},
+  owner = {idf1},
+  postprint = {https://pure.york.ac.uk/portal/files/40237334/001_5072_postprint.pdf},
+  timestamp = {2016.10.12}
+}
+</pre>
+  </div>
+</div>
+</li>
+<li><span id="Austin2013">Austin, A.N., Dawson, J.F., Flintoft, I.D. and Marvin, A.C., 2013. Analysis of the shielding properties of metalised nonwoven materials. In: <i>2013 International Symposium on Electromagnetic Compatibility (EMC EUROPE 2013)</i>, 12th International Symposium on Electromagnetic Compatibility. Brugge, Belgium: IEEE, pp.526–531.</span><br />
+
+
+
+
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> </span>
+  <div class="dropdown-content">
+    <p>This paper considers the shielding effectiveness of nonwoven materials in the 1-8.5 GHz range using parametric semi-empirical models and experimental techniques. A range of materials based on metalised carbon fibres are considered with weights between 10 and 75 g/m2, thicknesses between 50 and 400μm, and measured shielding effectiveness between 35 and 100dB. A numerical model is presented and compared to experimental results.</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span> <i class="fa fa-fw fa-database" aria-hidden="true"></i> </span>
+  <div class="dropdown-contentx">
+    <pre>@inproceedings{Austin2013,
+  issn = {2325-0356},
+  isbn = {978-1-4673-4979-6},
+  booktitle = {2013 International Symposium on Electromagnetic Compatibility (EMC EUROPE 2013)},
+  month = {2-6 September},
+  publisher = {IEEE},
+  address = {Brugge, Belgium},
+  series = {12th International Symposium on Electromagnetic Compatibility},
+  author = {Austin, A. N. and Dawson, J. F. and Flintoft, I. D. and Marvin, A. C.},
+  title = {Analysis of the shielding properties of metalised nonwoven materials},
+  year = {2013},
+  pages = {526--531},
+  file = {:pdfs/EMCE2013-Austin-526.pdf:PDF},
+  keywords = {shielding; metallised nonwovens; high reflectivity; TLM modelling; aperture; pore; absorber box; carbon; fibre; electroplating; electrochemical; electric field; screening},
+  owner = {idf1},
+  timestamp = {2013.09.17}
+}
+</pre>
+  </div>
+</div>
+</li></ol>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-08-04T00:00:00+01:00">August 04, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Paper+on+modelling+the+shielding+characteristics+of+nonwoven+fabrics%20https%3A%2F%2Fflintoftd.github.io%2Ftemc-nonwoven-paper%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fflintoftd.github.io%2Ftemc-nonwoven-paper%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fflintoftd.github.io%2Ftemc-nonwoven-paper%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fflintoftd.github.io%2Ftemc-nonwoven-paper%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://flintoftd.github.io/temc-testsuite-paper/" class="pagination--pager" title="Paper on a validation test-suite for CEM solvers
+">Previous</a>
+    
+    
+      <a href="https://flintoftd.github.io/temc-diffusion-paper/" class="pagination--pager" title="Paper on diffusion of reverberant energy
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/edm-update/" rel="permalink">Electromagnetic Diffusion Model Updates
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Added Electromagnetic Diffusion Model Implementation Notes to the resources section and a summary of the associated Open Source 
+Electromagnetic Diffusion Mo...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/resources-section/" rel="permalink">New resources section
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">New resources section for notes, examples and other material.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/temc-diffusion-paper/" rel="permalink">Paper on diffusion of reverberant energy
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Paper on diffusion of reverberant electromagnetic energy in enclosed spaces 
+accepted for publication in IEEE Transaction on Electromagnetic Compatibility.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://flintoftd.github.io/temc-testsuite-paper/" rel="permalink">Paper on a validation test-suite for CEM solvers
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Paper on a validation and verification test-suite for computational electromagnetics solvers
+accepted for publication in IEEE Transaction on Electromagnetic ...</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/flintoftid"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://flintoftd.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Ian D. Flintoft. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="https://flintoftd.github.io/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
