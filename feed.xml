@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://flintoftid.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://flintoftid.github.io/" rel="alternate" type="text/html" /><updated>2020-10-08T21:22:47+01:00</updated><id>https://flintoftid.github.io/</id><title type="html">Ian D. Flintoft</title><subtitle>Research &amp; Engineering Portfolio</subtitle><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><entry><title type="html">Electromagnetic Diffusion Model Updates</title><link href="https://flintoftid.github.io/edm-update/" rel="alternate" type="text/html" title="Electromagnetic Diffusion Model Updates" /><published>2018-03-24T00:00:00+00:00</published><updated>2018-03-24T00:00:00+00:00</updated><id>https://flintoftid.github.io/edm-update</id><content type="html" xml:base="https://flintoftid.github.io/edm-update/">&lt;p&gt;Added &lt;a href=&quot;https://bitbucket.org/uoyaeg/edmctc/wiki/EDM_Implementation_Notes.pdf&quot;&gt;Electromagnetic Diffusion Model Implementation Notes&lt;/a&gt; to the &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; and a summary of the associated Open Source 
-&lt;a href=&quot;https://bitbucket.org/uoyaeg/edmctc&quot;&gt;Electromagnetic Diffusion Model Canonical Test Cases&lt;/a&gt; software package to the &lt;a href=&quot;/software/software.html&quot;&gt;software section&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://flintoftid.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://flintoftid.github.io/" rel="alternate" type="text/html" /><updated>2020-10-09T19:01:40+01:00</updated><id>https://flintoftid.github.io/</id><title type="html">Ian D. Flintoft</title><subtitle>Research &amp; Engineering Portfolio</subtitle><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><entry><title type="html">Electromagnetic Diffusion Model Updates</title><link href="https://flintoftid.github.io/edm-update/" rel="alternate" type="text/html" title="Electromagnetic Diffusion Model Updates" /><published>2018-03-24T00:00:00+00:00</published><updated>2018-03-24T00:00:00+00:00</updated><id>https://flintoftid.github.io/edm-update</id><content type="html" xml:base="https://flintoftid.github.io/edm-update/">&lt;p&gt;Added &lt;a href=&quot;https://github.com/flintoftid/edmctc/wiki/EDM_Implementation_Notes.pdf&quot;&gt;Electromagnetic Diffusion Model Implementation Notes&lt;/a&gt; to the &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; and a summary of the associated Open Source 
+&lt;a href=&quot;https://github.com/flintoftid/edmctc&quot;&gt;Electromagnetic Diffusion Model Canonical Test Cases&lt;/a&gt; software package to the &lt;a href=&quot;/software/software.html&quot;&gt;software section&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/3dedmmesh2.jpg&quot; alt=&quot;placeholder&quot; title=&quot;3D mesh of a cavity containing a cylinder&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Added Electromagnetic Diffusion Model Implementation Notes to the resources section and a summary of the associated Open Source Electromagnetic Diffusion Model Canonical Test Cases software package to the software section.</summary></entry><entry><title type="html">New resources section</title><link href="https://flintoftid.github.io/resources-section/" rel="alternate" type="text/html" title="New resources section" /><published>2016-11-27T00:00:00+00:00</published><updated>2016-11-27T00:00:00+00:00</updated><id>https://flintoftid.github.io/resources-section</id><content type="html" xml:base="https://flintoftid.github.io/resources-section/">&lt;p&gt;New &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; for notes, examples and other material.&lt;/p&gt;
 
@@ -9,8 +9,8 @@ navigation bar at the top, where I shall put notes and other material that other
 &lt;p&gt;As a start, I have added some 
 &lt;a href=&quot;https://www.dropbox.com/s/smdbgzrm447uc2s/IDF-Notes_On_Small_Aperture_Theory.pdf?dl=0&quot;&gt;notes on small aperture theory&lt;/a&gt; that 
 I made while implementing small aperture models in the 
-&lt;a href=&quot;https://bitbucket.org/uoyaeg/vulture&quot;&gt;Vulture FDTD code&lt;/a&gt; and the 
-&lt;a href=&quot;https://bitbucket.org/uoyaeg/aegpwb&quot;&gt;AEG power balance solver&lt;/a&gt;. These notes are a summary of
+&lt;a href=&quot;https://github.com/flintoftid/vulture&quot;&gt;Vulture FDTD code&lt;/a&gt; and the 
+&lt;a href=&quot;https://github.com/flintoftid/aegpwb&quot;&gt;AEG power balance solver&lt;/a&gt;. These notes are a summary of
 the key steps in the theoretical development of the aperture polarisabilities and equivalent
 dipole moements. There is a wide variation in the conventions used in the literature
 for defining the polarisabilties making it remarkably easy to incur “factor of two/half”
@@ -168,7 +168,7 @@ surface resistance of the material and hence its shielding effectiveness.&lt;/p&
 &lt;p&gt;The work in the paper is part of a collaboration between the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt; and &lt;a href=&quot;http://www.tfpglobal.com&quot; title=&quot;Technical Fibre Products&quot;&gt;Technical Fibre Products&lt;/a&gt;.
 My particular contribution to the collaboration was initiating the &lt;a href=&quot;https://en.wikipedia.org/wiki/Percolation_theory&quot;&gt;percolation theory&lt;/a&gt; approach
 to the modelling and developing and implementing the Monte Simulation tool in &lt;a href=&quot;https://www.mathworks.com/products/matlab&quot;&gt;MATLAB&lt;/a&gt; using 
-elements of the &lt;a href=&quot;https://bitbucket.org/uoyaeg/aegmesher&quot; title=&quot;AEG structured mesh generator&quot;&gt;AEG Mesher&lt;/a&gt; software package.&lt;/p&gt;
+elements of the &lt;a href=&quot;https://github.com/flintoftid/aegmesher&quot; title=&quot;AEG structured mesh generator&quot;&gt;AEG Mesher&lt;/a&gt; software package.&lt;/p&gt;
 
 &lt;p&gt;Full details of the work can be found in the paper &lt;a href=&quot;#Dawson2017a&quot;&gt;(Dawson et al., 2017; Austin et al., 2015; Austin et al., 2013)&lt;/a&gt;.&lt;/p&gt;
 
@@ -300,7 +300,7 @@ Intensity Radiated Field Synthetic Environment (&lt;a href=&quot;http://ec.europ
 &lt;img src=&quot;/assets/images/boxts-hardware_320.jpg&quot; alt=&quot;placeholder 2&quot; title=&quot;Hardware implementation of a test-case in an anechoic chamber&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Full details of the work can be found in the paper &lt;a href=&quot;#Flintoft2017&quot;&gt;(Flintoft et al., 2017)&lt;/a&gt; and
-on the &lt;a href=&quot;https://bitbucket.org/uoyaeg/aegboxts&quot;&gt;test-suite web site&lt;/a&gt;. Some of the 
+on the &lt;a href=&quot;https://github.com/flintoftid/aegboxts&quot;&gt;test-suite web site&lt;/a&gt;. Some of the 
 earlier developments are reported in &lt;a href=&quot;#Flintoft2013b&quot;&gt;(Flintoft et al., 2013; Tallini et al., 2011; Christopoulos et al., 2010; Dawson et al., 2008)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
@@ -490,7 +490,7 @@ for
 &lt;a href=&quot;https://www.york.ac.uk/research/themes/technologies-for-the-future&quot;&gt;Technologies for the Future&lt;/a&gt;,
 at the Department of Electronics, University of York, on 28th June, 2016. 
 Left to right: &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/martin_robinson&quot;&gt;Dr Martin Robinson&lt;/a&gt;, &lt;a href=&quot;https://www.researchgate.net/profile/Gregory_Melia&quot;&gt;Dr Gregory Melia&lt;/a&gt;, &lt;a href=&quot;https://www.york.ac.uk/physics/people/krauss&quot;&gt;Prof Thomas Krauss&lt;/a&gt;, 
-&lt;a href=&quot;https://idflintoft.bitbucket.io&quot;&gt;Dr Ian Flintoft&lt;/a&gt;, &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/andy_marvin&quot;&gt;Prof Andy Marvin&lt;/a&gt; and &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/john_dawson&quot;&gt;Dr John Dawson&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;https://idflintoft.github.io&quot;&gt;Dr Ian Flintoft&lt;/a&gt;, &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/andy_marvin&quot;&gt;Prof Andy Marvin&lt;/a&gt; and &lt;a href=&quot;https://www.york.ac.uk/electronics/staff/john_dawson&quot;&gt;Dr John Dawson&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -660,7 +660,7 @@ since worked on turning the prototype code into a more user focussed modular sof
 test-suite, user documentation and tutorial. I have also added a bounding volume hierarchy (&lt;a href=&quot;https://en.wikipedia.org/wiki/Bounding_volume_hierarchy&quot;&gt;BVH&lt;/a&gt;) to 
 improve the efficiency of the mapping stage of the mesh generation.&lt;/p&gt;
 
-&lt;p&gt;Full details of the work can be found in the paper &lt;a href=&quot;#Berens2016&quot;&gt;(Berens, Flintoft and Dawson, 2016)&lt;/a&gt; and the &lt;a href=&quot;https://bitbucket.org/uoyaeg/aegmesher&quot; title=&quot;AEG structured mesh generator&quot;&gt;AEG Mesher&lt;/a&gt; website.&lt;/p&gt;
+&lt;p&gt;Full details of the work can be found in the paper &lt;a href=&quot;#Berens2016&quot;&gt;(Berens, Flintoft and Dawson, 2016)&lt;/a&gt; and the &lt;a href=&quot;https://github.com/flintoftid/aegmesher&quot; title=&quot;AEG structured mesh generator&quot;&gt;AEG Mesher&lt;/a&gt; website.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
