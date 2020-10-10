@@ -68,4 +68,9 @@ var store = [{
         "excerpt":"Added Electromagnetic Diffusion Model Implementation Notes to the resources section and a summary of the associated Open Source Electromagnetic Diffusion Model Canonical Test Cases software package to the software section.","categories": [],
         "tags": [],
         "url": "https://flintoftid.github.io/edm-update/",
+        "teaser":null},{
+        "title": "Site and software repositories re-hosted",
+        "excerpt":"The site has been rehosted on github pages. The software repositories and resources are also in the process of been re-hosted onto github over the next couple of weeks.","categories": [],
+        "tags": [],
+        "url": "https://flintoftid.github.io/hosting-update/",
         "teaser":null}]

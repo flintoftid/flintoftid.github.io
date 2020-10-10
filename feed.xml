@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://flintoftid.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://flintoftid.github.io/" rel="alternate" type="text/html" /><updated>2020-10-09T19:01:40+01:00</updated><id>https://flintoftid.github.io/</id><title type="html">Ian D. Flintoft</title><subtitle>Research &amp; Engineering Portfolio</subtitle><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><entry><title type="html">Electromagnetic Diffusion Model Updates</title><link href="https://flintoftid.github.io/edm-update/" rel="alternate" type="text/html" title="Electromagnetic Diffusion Model Updates" /><published>2018-03-24T00:00:00+00:00</published><updated>2018-03-24T00:00:00+00:00</updated><id>https://flintoftid.github.io/edm-update</id><content type="html" xml:base="https://flintoftid.github.io/edm-update/">&lt;p&gt;Added &lt;a href=&quot;https://github.com/flintoftid/edmctc/wiki/EDM_Implementation_Notes.pdf&quot;&gt;Electromagnetic Diffusion Model Implementation Notes&lt;/a&gt; to the &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; and a summary of the associated Open Source 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://flintoftid.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://flintoftid.github.io/" rel="alternate" type="text/html" /><updated>2020-10-10T11:24:23+01:00</updated><id>https://flintoftid.github.io/</id><title type="html">Ian D. Flintoft</title><subtitle>Research &amp; Engineering Portfolio</subtitle><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><entry><title type="html">Site and software repositories re-hosted</title><link href="https://flintoftid.github.io/hosting-update/" rel="alternate" type="text/html" title="Site and software repositories re-hosted" /><published>2020-10-10T00:00:00+01:00</published><updated>2020-10-10T00:00:00+01:00</updated><id>https://flintoftid.github.io/hosting-update</id><content type="html" xml:base="https://flintoftid.github.io/hosting-update/">&lt;p&gt;The site has been rehosted on github pages. The &lt;a href=&quot;/software/software.html&quot;&gt;software&lt;/a&gt; repositories and &lt;a href=&quot;/resources/resources.html&quot;&gt;resources&lt;/a&gt; 
+are also in the process of been re-hosted onto github over the next couple of weeks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/mountains.jpg&quot; alt=&quot;placeholder&quot; title=&quot;Site Banner&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">The site has been rehosted on github pages. The software repositories and resources are also in the process of been re-hosted onto github over the next couple of weeks.</summary></entry><entry><title type="html">Electromagnetic Diffusion Model Updates</title><link href="https://flintoftid.github.io/edm-update/" rel="alternate" type="text/html" title="Electromagnetic Diffusion Model Updates" /><published>2018-03-24T00:00:00+00:00</published><updated>2018-03-24T00:00:00+00:00</updated><id>https://flintoftid.github.io/edm-update</id><content type="html" xml:base="https://flintoftid.github.io/edm-update/">&lt;p&gt;Added &lt;a href=&quot;https://github.com/flintoftid/edmctc/wiki/EDM_Implementation_Notes.pdf&quot;&gt;Electromagnetic Diffusion Model Implementation Notes&lt;/a&gt; to the &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; and a summary of the associated Open Source 
 &lt;a href=&quot;https://github.com/flintoftid/edmctc&quot;&gt;Electromagnetic Diffusion Model Canonical Test Cases&lt;/a&gt; software package to the &lt;a href=&quot;/software/software.html&quot;&gt;software section&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/3dedmmesh2.jpg&quot; alt=&quot;placeholder&quot; title=&quot;3D mesh of a cavity containing a cylinder&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Added Electromagnetic Diffusion Model Implementation Notes to the resources section and a summary of the associated Open Source Electromagnetic Diffusion Model Canonical Test Cases software package to the software section.</summary></entry><entry><title type="html">New resources section</title><link href="https://flintoftid.github.io/resources-section/" rel="alternate" type="text/html" title="New resources section" /><published>2016-11-27T00:00:00+00:00</published><updated>2016-11-27T00:00:00+00:00</updated><id>https://flintoftid.github.io/resources-section</id><content type="html" xml:base="https://flintoftid.github.io/resources-section/">&lt;p&gt;New &lt;a href=&quot;/resources/resources.html&quot;&gt;resources section&lt;/a&gt; for notes, examples and other material.&lt;/p&gt;
@@ -700,63 +703,4 @@ improve the efficiency of the mapping stage of the mesh generation.&lt;/p&gt;
 &lt;/pre&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Article on a new open source structured mesh generator for electromagnetic simulation tools accepted for publication in IEEE Antennas and Propagation Magazine.</summary></entry><entry><title type="html">Paper on PCB absorption cross-section measurements in reverberation chamber</title><link href="https://flintoftid.github.io/temc-pcb-acs-paper/" rel="alternate" type="text/html" title="Paper on PCB absorption cross-section measurements in reverberation chamber" /><published>2015-12-29T00:00:00+00:00</published><updated>2015-12-29T00:00:00+00:00</updated><id>https://flintoftid.github.io/temc-pcb-acs-paper</id><content type="html" xml:base="https://flintoftid.github.io/temc-pcb-acs-paper/">&lt;p&gt;Paper on measured average absorption cross-section of printed circuit boards (PCBs) 
-accepted for publication in &lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=15&quot;&gt;IEEE Transaction on Electromagnetic Compatibility&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Absorption by the contents of an equipment enclosure, particularly PCBs, affect the 
-enclosure’s shielding performance. At high frequencies we propose that this absorption 
-can be quantified using the angle of arrival and polarization averaged absorption 
-cross-section (ACS), which can be measured in a reverberation chamber. This paper
-presents the measured average ACS of a large number of PCBs taken from contemporary 
-information and communication technology (ICT) equipment to provide a unique and 
-comprehensive dataset for developing high frequency shielding methodologies.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/temc-pcb-acs-pcbs_320.jpg&quot; alt=&quot;placeholder&quot; title=&quot;Structure of different classes of PCB measured&quot; /&gt;
-&lt;img src=&quot;/assets/images/temc-pcb-acs-classes_320.jpg&quot; alt=&quot;placeholder&quot; title=&quot;Measured ACS of PCBs in the different classes&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The images above show a photograph of one PCB from each of the classes of PCB identified and the
-measured average ACS of the all the PCBs coloured according to their class.&lt;/p&gt;
-
-&lt;p&gt;This work was part of the collaborative 
-&lt;a href=&quot;/projects/huawei_shielding_2014.html&quot;&gt;shielding measurement of electrically large enclosures with contents&lt;/a&gt;
-project between &lt;a href=&quot;http://www.huawei.com/en&quot;&gt;Huawei Technologies&lt;/a&gt; and the &lt;a href=&quot;http://www.york.ac.uk/electronics/research/communication-technologies/applied-electromagnetics-devices&quot; title=&quot;Applied Electromagnetics Group, University of York&quot;&gt;AEG&lt;/a&gt;. See the paper &lt;a href=&quot;#Flintoft2016a&quot;&gt;(Flintoft et al., 2016)&lt;/a&gt; for details.&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;Flintoft2016a&quot;&gt;Flintoft, I.D., Parker, S.L., Bale, S.J., Marvin, A.C., Dawson, J.F. and Robinson, M.P., 2016. Measured average absorption cross-sections of printed circuit boards from 2 to 20 GHz. &lt;i&gt;IEEE Transactions on Electromagnetic Compatibility&lt;/i&gt;, 58(2), pp.553–560.&lt;/span&gt;&lt;br /&gt;
- &lt;a class=&quot;bib-materials&quot; href=&quot;http://doi.org/10.1109/TEMC.2016.2515658&quot;&gt;&lt;i class=&quot;ai ai-fw ai-doi&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
-
-
- &lt;a class=&quot;bib-materials&quot; href=&quot;https://pure.york.ac.uk/portal/files/46384073/TEMC58_Flintoft_et_al_553_postprint.pdf&quot;&gt;&lt;i class=&quot;ai ai-fw ai-open-access&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt; 
-
-&lt;div class=&quot;dropdown&quot;&gt;
-  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-file-text-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
-  &lt;div class=&quot;dropdown-content&quot;&gt;
-    &lt;p&gt;Absorption by the contents of an equipment enclosure, particularly printed circuit boards (PCBs), affect the enclosure’s shielding performance. At high frequencies, this absorption can be quantified using the angle of arrival and polarization averaged absorption cross-section (ACS). However, there is no available data on the high-frequency absorption characteristics of modern PCBs. In this study, we apply a reverberation chamber to the determination of the average ACS of a large number of PCBs taken from contemporary information and communication technology (ICT) equipment to provide a unique and comprehensive dataset. The ACS was found to range from 4 × 10-4-10-2 m2 from 2-20 GHz and different classes of PCB could be identified according to their surface characteristics. The “shadowing effect” of densely packed PCBs was also quantified for a subset of the PCBs. It was found that the ACS of a PCB in the stack was reduced by 20%-40% compared to its value when isolated. By way of a review of the general power balance analysis of an electrically large populated equipment enclosure in an external environment, we show how the acquired data will be useful for future qualification methodologies for ICT enclosures and PCBs.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;dropdown&quot;&gt;
-  &lt;span&gt; &lt;i class=&quot;fa fa-fw fa-database&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;/span&gt;
-  &lt;div class=&quot;dropdown-contentx&quot;&gt;
-    &lt;pre&gt;@article{Flintoft2016a,
-  author = {Flintoft, I. D. and Parker, S. L. and Bale, S. J. and Marvin, A. C. and Dawson, J. F. and Robinson, M. P.},
-  title = {Measured average absorption cross-sections of printed circuit boards from 2 to 20 GHz},
-  journal = {IEEE Transactions on Electromagnetic Compatibility},
-  year = {2016},
-  volume = {58},
-  number = {2},
-  pages = {553-560},
-  month = apr,
-  issn = {0018-9375},
-  note = {Date of acceptance: 29/12/2015. © 2016 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.},
-  doi = {10.1109/TEMC.2016.2515658},
-  file = {:pdfs/TEMC58-Flintoft-553.pdf:PDF},
-  keywords = {shielding, printed circuit board, absorption cross-section, reverberation chamber, immunity, emissions, power balance},
-  postprint = {https://pure.york.ac.uk/portal/files/46384073/TEMC58_Flintoft_et_al_553_postprint.pdf},
-  publisher = {IEEE}
-}
-&lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Paper on measured average absorption cross-section of printed circuit boards (PCBs) accepted for publication in IEEE Transaction on Electromagnetic Compatibility.</summary></entry></feed>
+&lt;/li&gt;&lt;/ol&gt;</content><author><name>Ian Flintoft</name><email>ian.flintoft@googlemail.com</email></author><summary type="html">Article on a new open source structured mesh generator for electromagnetic simulation tools accepted for publication in IEEE Antennas and Propagation Magazine.</summary></entry></feed>
